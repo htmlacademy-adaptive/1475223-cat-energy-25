@@ -1,12 +1,52 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="UTF-8">
+  <title>Функциональное питание для котов «CAT ENERGY»</title>
+</head>
 
-  </body>
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo">
+      <img src="img/logo-mobile.svg" width="33" height="auto" alt="Функциональное питание для котов «CAT ENERGY»">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main-content">
+
+    <h1 class="visually-hidden">«CAT ENERGY» — самое сбалансированное фитнес-питание для кошек!</h1>
+
+    <section class="hero">
+      <div class="hero__container container">
+        <h2 class="hero__title">Функциональное питание для котов</h2>
+        <p class="hero__subtitle">Занялся собой? Займись котом!</p>
+        <img class="hero__image" src="img/hero.jpg" alt="Функциональное питание для котов «CAT ENERGY»">
+        <a class="hero__button button button--primary" href="form.html">Подобрать программу</a>
+      </div>
+    </section>
+
+</body>
+
 </html>
