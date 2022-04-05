@@ -1,0 +1,11 @@
+%reset-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+%heading {
+  font-family: $font-family-headings;
+  color: $headings-color;
+  font-weight: 500;
+}

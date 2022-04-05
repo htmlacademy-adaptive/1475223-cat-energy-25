@@ -1,0 +1,20 @@
+.button {
+  display: block;
+  padding: 13px 26px;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: $font-family-buttons;
+  transition: background-color .2s ease, border-color .2s ease;
+
+  &--primary {
+    color: $white;
+    background-color: $primary;
+    border-color: $primary;
+    &:hover {
+      $color: darken($primary, 10%);
+      background-color: $color;
+      border-color: $color;
+    }
+  }
+}

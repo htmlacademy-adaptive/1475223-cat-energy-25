@@ -1,0 +1,17 @@
+.nav__toggle {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.nav__inner {
+  display: flex;
+}
+
+.nav__list {
+  display: none;
+  position: absolute;
+  top: 58px;
+  right: 0;
+  left: 0;
+}

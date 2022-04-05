@@ -1,0 +1,33 @@
+.actions {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.actions__title {
+  margin-bottom: 40px;
+}
+
+.actions__list {
+  @extend %reset-list;
+}
+
+.actions__item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.actions__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary;
+  flex: 0 0 60px;
+  margin-right: 20px;
+  width: 60px;
+  height: 60px;
+}
+
+.actions__description {
+  flex: 1 1 auto;
+  margin-bottom: 0;
+}

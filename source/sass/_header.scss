@@ -1,0 +1,19 @@
+.header {
+  position: relative;
+  padding: 10px 0;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  font-size: 0;
+
+  img {
+    width: auto;
+    height: 38px;
+  }
+}
