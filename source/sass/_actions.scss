@@ -8,7 +8,7 @@
 }
 
 .actions__list {
-  @extend %reset-list;
+  @include reset-list();
 }
 
 .actions__item {

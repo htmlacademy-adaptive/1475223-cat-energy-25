@@ -1,0 +1,7 @@
+@mixin heading($font-size: 14px, $font-weight: 500, $color: $headings-color, $font-family: $font-family-headings) {
+  font-family: $font-family-headings;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  color: $color;
+  line-height: 1;
+}

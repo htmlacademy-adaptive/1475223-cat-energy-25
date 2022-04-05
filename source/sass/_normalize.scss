@@ -1,7 +1,7 @@
 body {
   margin: 0;
   line-height: 1.28;
-  font-family: $font-family-base;;
+  font-family: $font-family-base;
   font-size: 14px;
   color: $body-color;
 }
@@ -36,14 +36,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 500;
-  font-family: $font-family-headings;
-  color: $headings-color;
-  line-height: 1.1;
   margin-top: 0;
   margin-bottom: 20px;
 }
-
 
 h1 {
   font-size: 42px;

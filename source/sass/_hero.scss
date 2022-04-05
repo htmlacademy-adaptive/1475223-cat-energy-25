@@ -28,18 +28,19 @@
   align-items: center;
 }
 
-.hero__title,
-.hero__subtitle {
-  color: $white;
-}
-
 .hero__title {
+  @include heading($font-size: 32px, $color: $white);
   text-align: center;
   margin-bottom: 25px;
 }
 
 .hero__subtitle {
-  @extend %heading;
+  @include heading($font-weight: 400, $color: $white);
   text-transform: uppercase;
   margin-bottom: 30px;
+}
+
+.hero__image {
+  width: 100%;
+  height: auto;
 }

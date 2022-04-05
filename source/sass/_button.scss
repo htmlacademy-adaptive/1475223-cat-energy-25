@@ -1,10 +1,10 @@
 .button {
+  @include heading($font-weight: 400);
   display: block;
   padding: 13px 26px;
   border: 1px solid transparent;
   text-transform: uppercase;
   text-align: center;
-  font-family: $font-family-buttons;
   transition: background-color .2s ease, border-color .2s ease;
 
   &--primary {

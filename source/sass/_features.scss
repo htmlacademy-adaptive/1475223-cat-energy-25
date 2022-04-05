@@ -23,7 +23,7 @@
 }
 
 .features__list {
-  @extend %reset-list;
+  @include reset-list();
 }
 
 .features__item {
@@ -35,7 +35,7 @@
 }
 
 .features__link {
-  @extend %heading;
+  @include heading();
   display: flex;
   align-items: center;
   font-size: 16px;

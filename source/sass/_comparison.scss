@@ -9,7 +9,7 @@
 }
 
 .comparison__total {
-  @extend %heading;
+  @include heading();
   margin-bottom: 40px;
   text-transform: uppercase;
   text-align: center;
@@ -37,7 +37,7 @@
 }
 
 .comparison__meta-label {
-  @extend %heading;
+  @include heading();
   font-size: 24px;
 }
 
@@ -106,7 +106,7 @@
 
 .comparison__slider-before,
 .comparison__slider-after {
-  @extend %heading;
+  @include heading();
   font-size: 16px;
   font-weight: 400;
 }
