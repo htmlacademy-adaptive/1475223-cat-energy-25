@@ -32,6 +32,7 @@
 .features__item {
   padding: 20px;
   background-color: $bg-color;
+
   &:not(:last-of-type) {
     margin-bottom: 20px;
   }
