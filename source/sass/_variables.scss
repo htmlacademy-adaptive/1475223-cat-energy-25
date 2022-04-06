@@ -1,9 +1,12 @@
-$primary: #68b738;
 $white: #fff;
 $gray: #f2f2f2;
 $light-gray: #e6e6e6;
 $dark-gray: #444444;
 $black: #000;
+$green: #68b738;
+
+$primary: $green;
+$secondary: $gray;
 
 $body-color: $dark-gray;
 $border-color: $light-gray;

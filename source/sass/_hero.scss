@@ -4,6 +4,7 @@
   padding-bottom: 20px;
 
   &::before {
+    @include background($primary, "/img/hero-bg.jpg");
     content: "";
     position: absolute;
     z-index: -1;
@@ -11,10 +12,6 @@
     left: 0;
     right: 0;
     height: 60%;
-    background: linear-gradient(0deg, rgba($primary, 0.86), rgba($primary, 0.86)), url("/img/hero-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
   }
 }
 

@@ -1,20 +1,17 @@
 .button {
-  @include heading(14px, 1);
+  @include heading(14px, 1, 400);
   display: block;
   padding: 13px 26px;
   border: 1px solid transparent;
   text-transform: uppercase;
   text-align: center;
-  transition: background-color .2s ease, border-color .2s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 
   &--primary {
-    color: $white;
-    background-color: $primary;
-    border-color: $primary;
-    &:hover {
-      $color: darken($primary, 10%);
-      background-color: $color;
-      border-color: $color;
-    }
+    @include button-variant($white, $primary, $primary);
+  }
+
+  &--secondary {
+    @include button-variant($body-color, $secondary, $secondary);
   }
 }

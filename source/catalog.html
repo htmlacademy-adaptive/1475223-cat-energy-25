@@ -3,196 +3,243 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Функциональное питание для котов «CAT ENERGY»</title>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body class="page__body">
   <header class="header">
-    <a href="index.html" class="header__logo">
-      <img src="img/logo-mobile.svg" alt="Функциональное питание для котов «CAT ENERGY»">
-    </a>
-    <nav class="nav">
-      <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="nav__inner">
-        <ul class="nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="header__container container">
+      <a href="index.html" class="header__logo">
+        <img src="img/logo-mobile.svg" alt="Функциональное питание для котов «CAT ENERGY»">
+      </a>
+      <a href="index.html" class="header__logo-text">
+        <img src="img/footer-logo.svg" alt="Функциональное питание для котов «CAT ENERGY»">
+      </a>
+      <nav class="nav">
+        <button class="nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+          <svg width="24" height="18">
+            <use xlink:href="img/sprite.svg#hamburger"></use>
+          </svg>
+        </button>
+        <div class="nav__inner">
+          <ul class="nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="main-content">
     <section class="catalog">
       <div class="catalog__container container">
-        <h2 class="section-title">Каталог продукции</h2>
+        <h2 class="catalog__title section-title">Каталог продукции</h2>
         <div class="catalog__cards">
           <div class="catalog__card card">
-            <h5 class="card__title">Cat Energy PRO 500 г</h5>
-            <img src="img/catalog-1-desktop.jpg" alt="Cat Energy PRO 500 г">
-            <div class="card-properties">
-              <div class="card__properties-row">
-                <div class="card__properties-label">Масса</div>
-                <div class="card__properties-value">500 г</div>
-              </div>
-              <div class="card__properties-row">
-                <div class="card__properties-label">Вкус</div>
-                <div class="card__properties-value">Курица</div>
-              </div>
-              <div class="card__properties-row">
-                <div class="card__properties-label">Цена</div>
-                <div class="card__properties-value">700 Р.</div>
-              </div>
-              <button class="card__button button button--primary" type="button">
-                заказать
-              </button>
+            <div class="card__img">
+              <img src="img/catalog-1-desktop.jpg" alt="Cat Energy PRO 500 г">
             </div>
+            <div class="card__inner">
+              <h5 class="card__title">Cat Energy PRO 500 г</h5>
+              <div class="card__properties">
+                <div class="card__properties-row">
+                  <div class="card__properties-label">Масса</div>
+                  <div class="card__properties-value">500 г</div>
+                </div>
+                <div class="card__properties-row">
+                  <div class="card__properties-label">Вкус</div>
+                  <div class="card__properties-value">Курица</div>
+                </div>
+                <div class="card__properties-row">
+                  <div class="card__properties-label">Цена</div>
+                  <div class="card__properties-value">700 Р.</div>
+                </div>
+              </div>
+            </div>
+            <button class="card__button button button--primary" type="button">
+              заказать
+            </button>
           </div>
           <div class="catalog__card card">
-            <h5 class="card__title">Cat Energy PRO 1000 г</h5>
-            <img src="img/catalog-2-desktop.jpg" alt="Cat Energy PRO 1000 г">
-            <div class="card-properties">
-              <div class="card__properties-row">
-                <div class="card__properties-label">Масса</div>
-                <div class="card__properties-value">1000 г</div>
-              </div>
-              <div class="card__properties-row">
-                <div class="card__properties-label">Вкус</div>
-                <div class="card__properties-value">Курица</div>
-              </div>
-              <div class="card__properties-row">
-                <div class="card__properties-label">Цена</div>
-                <div class="card__properties-value">1000 Р.</div>
-              </div>
-              <button class="card__button button button--primary" type="button">
-                заказать
-              </button>
+            <div class="card__img">
+              <img src="img/catalog-2-desktop.jpg" alt="Cat Energy PRO 1000 г">
             </div>
+            <div class="card__inner">
+              <h5 class="card__title">Cat Energy PRO 1000 г</h5>
+              <div class="card__properties">
+                <div class="card__properties-row">
+                  <div class="card__properties-label">Масса</div>
+                  <div class="card__properties-value">1000 г</div>
+                </div>
+                <div class="card__properties-row">
+                  <div class="card__properties-label">Вкус</div>
+                  <div class="card__properties-value">Курица</div>
+                </div>
+                <div class="card__properties-row">
+                  <div class="card__properties-label">Цена</div>
+                  <div class="card__properties-value">1000 Р.</div>
+                </div>
+              </div>
+            </div>
+            <button class="card__button button button--primary" type="button">
+              заказать
+            </button>
           </div>
+
           <div class="catalog__card card">
-            <h5 class="card__title">Cat Energy SLIM 500 г</h5>
-            <img src="img/catalog-3-desktop.jpg" alt="Cat Energy SLIM 500 г">
-            <div class="card-properties">
-              <div class="card__properties-row">
-                <div class="card__properties-label">Масса</div>
-                <div class="card__properties-value">500 г</div>
-              </div>
-              <div class="card__properties-row">
-                <div class="card__properties-label">Вкус</div>
-                <div class="card__properties-value">Рыба</div>
-              </div>
-              <div class="card__properties-row">
-                <div class="card__properties-label">Цена</div>
-                <div class="card__properties-value">700 Р.</div>
-              </div>
-              <button class="card__button button button--primary" type="button">
-                заказать
-              </button>
+            <div class="card__img">
+              <img src="img/catalog-3-desktop.jpg" alt="Cat Energy SLIM 500 г">
             </div>
+            <div class="card__inner">
+              <h5 class="card__title">Cat Energy PRO 1000 г</h5>
+              <div class="card__properties">
+                <div class="card__properties-row">
+                  <div class="card__properties-label">Масса</div>
+                  <div class="card__properties-value">500 г</div>
+                </div>
+                <div class="card__properties-row">
+                  <div class="card__properties-label">Вкус</div>
+                  <div class="card__properties-value">Рыба</div>
+                </div>
+                <div class="card__properties-row">
+                  <div class="card__properties-label">Цена</div>
+                  <div class="card__properties-value">700 Р.</div>
+                </div>
+              </div>
+            </div>
+            <button class="card__button button button--primary" type="button">
+              заказать
+            </button>
           </div>
+
           <div class="catalog__card card">
-            <h5 class="card__title">Cat Energy SLIM 1000 г</h5>
-            <img src="img/catalog-4-desktop.jpg" alt="Cat Energy SLIM 1000 г">
-            <div class="card-properties">
-              <div class="card__properties-row">
-                <div class="card__properties-label">Масса</div>
-                <div class="card__properties-value">1000 г</div>
-              </div>
-              <div class="card__properties-row">
-                <div class="card__properties-label">Вкус</div>
-                <div class="card__properties-value">Рыба</div>
-              </div>
-              <div class="card__properties-row">
-                <div class="card__properties-label">Цена</div>
-                <div class="card__properties-value">1000 Р.</div>
-              </div>
-              <button class="card__button button button--primary" type="button">
-                заказать
-              </button>
+            <div class="card__img">
+              <img src="img/catalog-4-desktop.jpg" alt="Cat Energy SLIM 1000 г">
             </div>
+            <div class="card__inner">
+              <h5 class="card__title">Cat Energy PRO 1000 г</h5>
+              <div class="card__properties">
+                <div class="card__properties-row">
+                  <div class="card__properties-label">Масса</div>
+                  <div class="card__properties-value">1000 г</div>
+                </div>
+                <div class="card__properties-row">
+                  <div class="card__properties-label">Вкус</div>
+                  <div class="card__properties-value">Рыба</div>
+                </div>
+                <div class="card__properties-row">
+                  <div class="card__properties-label">Цена</div>
+                  <div class="card__properties-value">1000 Р.</div>
+                </div>
+              </div>
+            </div>
+            <button class="card__button button button--primary" type="button">
+              заказать
+            </button>
           </div>
+
           <div class="catalog__card card">
-            <h5 class="card__title">Cat Energy SLIM 500 г</h5>
-            <img src="img/catalog-5-desktop.jpg" alt="Cat Energy SLIM 500 г">
-            <div class="card-properties">
-              <div class="card__properties-row">
-                <div class="card__properties-label">Масса</div>
-                <div class="card__properties-value">500 г</div>
-              </div>
-              <div class="card__properties-row">
-                <div class="card__properties-label">Вкус</div>
-                <div class="card__properties-value">гречка</div>
-              </div>
-              <div class="card__properties-row">
-                <div class="card__properties-label">Цена</div>
-                <div class="card__properties-value">400 Р.</div>
-              </div>
-              <button class="card__button button button--primary" type="button">
-                заказать
-              </button>
+            <div class="card__img">
+              <img src="img/catalog-5-desktop.jpg" alt="Cat Energy SLIM 500 г">
             </div>
+            <div class="card__inner">
+              <h5 class="card__title">Cat Energy SLIM 500 г</h5>
+              <div class="card__properties">
+                <div class="card__properties-row">
+                  <div class="card__properties-label">Масса</div>
+                  <div class="card__properties-value">500 г</div>
+                </div>
+                <div class="card__properties-row">
+                  <div class="card__properties-label">Вкус</div>
+                  <div class="card__properties-value">гречка</div>
+                </div>
+                <div class="card__properties-row">
+                  <div class="card__properties-label">Цена</div>
+                  <div class="card__properties-value">400 Р.</div>
+                </div>
+              </div>
+            </div>
+            <button class="card__button button button--primary" type="button">
+              заказать
+            </button>
           </div>
+
           <div class="catalog__card card">
-            <h5 class="card__title">Cat Energy SLIM 1000 г</h5>
-            <img src="img/catalog-6-desktop.jpg" alt="Cat Energy SLIM 1000 г">
-            <div class="card-properties">
-              <div class="card__properties-row">
-                <div class="card__properties-label">Масса</div>
-                <div class="card__properties-value">1000 г</div>
-              </div>
-              <div class="card__properties-row">
-                <div class="card__properties-label">Вкус</div>
-                <div class="card__properties-value">гречка</div>
-              </div>
-              <div class="card__properties-row">
-                <div class="card__properties-label">Цена</div>
-                <div class="card__properties-value">700 Р.</div>
-              </div>
-              <button class="card__button button button--primary" type="button">
-                заказать
-              </button>
+            <div class="card__img">
+              <img src="img/catalog-6-desktop.jpg" alt="Cat Energy SLIM 1000 г">
             </div>
+            <div class="card__inner">
+              <h5 class="card__title">Cat Energy SLIM 1000 г</h5>
+              <div class="card__properties">
+                <div class="card__properties-row">
+                  <div class="card__properties-label">Масса</div>
+                  <div class="card__properties-value">1000 г</div>
+                </div>
+                <div class="card__properties-row">
+                  <div class="card__properties-label">Вкус</div>
+                  <div class="card__properties-value">гречка</div>
+                </div>
+                <div class="card__properties-row">
+                  <div class="card__properties-label">Цена</div>
+                  <div class="card__properties-value">700 Р.</div>
+                </div>
+              </div>
+            </div>
+            <button class="card__button button button--primary" type="button">
+              заказать
+            </button>
           </div>
+
           <div class="catalog__card card">
-            <h5 class="card__title">Cat Energy SLIM 500 г</h5>
-            <img src="img/catalog-7-desktop.jpg" alt="Cat Energy SLIM 500 г">
-            <div class="card-properties">
-              <div class="card__properties-row">
-                <div class="card__properties-label">Масса</div>
-                <div class="card__properties-value">500 г</div>
-              </div>
-              <div class="card__properties-row">
-                <div class="card__properties-label">Вкус</div>
-                <div class="card__properties-value">рис</div>
-              </div>
-              <div class="card__properties-row">
-                <div class="card__properties-label">Цена</div>
-                <div class="card__properties-value">500 Р.</div>
-              </div>
-              <button class="card__button button button--primary" type="button">
-                заказать
-              </button>
+            <div class="card__img">
+              <img src="img/catalog-7-desktop.jpg" alt="Cat Energy SLIM 500 г">
             </div>
+            <div class="card__inner">
+              <h5 class="card__title">Cat Energy SLIM 500 г</h5>
+              <div class="card__properties">
+                <div class="card__properties-row">
+                  <div class="card__properties-label">Масса</div>
+                  <div class="card__properties-value">500 г</div>
+                </div>
+                <div class="card__properties-row">
+                  <div class="card__properties-label">Вкус</div>
+                  <div class="card__properties-value">рис</div>
+                </div>
+                <div class="card__properties-row">
+                  <div class="card__properties-label">Цена</div>
+                  <div class="card__properties-value">500 Р.</div>
+                </div>
+              </div>
+            </div>
+            <button class="card__button button button--primary" type="button">
+              заказать
+            </button>
           </div>
+
           <div class="catalog__card card card--show-more">
-            <h5 class="card__title">Показать еще 100500 товаров</h5>
-            <svg class="card-icon" width="30" height="30">
+            <svg class="card__icon" width="30" height="30">
               <use xlink:href="img/sprite.svg#plus"></use>
             </svg>
-            <p class="card-description">На самом деле вкусов гораздо больше!</p>
+            <h5 class="card__title">Показать еще 100500 товаров</h5>
+            <p class="card__description">На самом деле вкусов гораздо больше!</p>
             <button class="card__button button button--secondary" type="button">
               показать все
             </button>
@@ -202,13 +249,15 @@
           <h3 class="section-title">Дополнительные товары</h3>
           <div class="catalog__list-items">
             <div class="catalog__list-card card">
-              <h5 class="card__title">
-                Сахарозаменитель
-              </h5>
-              <div class="card__properties">
-                <div class="card__properties-row">
-                  <div class="card__properties-label">1 упаковка (100 г)</div>
-                  <div class="card__properties-value">200 Р.</div>
+              <div class="card__inner">
+                <h5 class="card__title">
+                  Сахарозаменитель
+                </h5>
+                <div class="card__properties">
+                  <div class="card__properties-row">
+                    <div class="card__properties-label">1 упаковка (100 г)</div>
+                    <div class="card__properties-value">200 Р.</div>
+                  </div>
                 </div>
               </div>
               <button class="card__button button button--secondary" type="button">
@@ -216,13 +265,15 @@
               </button>
             </div>
             <div class="catalog__list-card card">
-              <h5 class="card__title">
-                Питьевая вода
-              </h5>
-              <div class="card__properties">
-                <div class="card__properties-row">
-                  <div class="card__properties-label">5 литров</div>
-                  <div class="card__properties-value">50 Р.</div>
+              <div class="card__inner">
+                <h5 class="card__title">
+                  Питьевая вода
+                </h5>
+                <div class="card__properties">
+                  <div class="card__properties-row">
+                    <div class="card__properties-label">5 литров</div>
+                    <div class="card__properties-value">50 Р.</div>
+                  </div>
                 </div>
               </div>
               <button class="card__button button button--primary" type="button">
@@ -230,13 +281,15 @@
               </button>
             </div>
             <div class="catalog__list-card card">
-              <h5 class="card__title">
-                Молоко
-              </h5>
-              <div class="card__properties">
-                <div class="card__properties-row">
-                  <div class="card__properties-label">1 литр</div>
-                  <div class="card__properties-value">100 Р.</div>
+              <div class="card__inner">
+                <h5 class="card__title">
+                  Молоко
+                </h5>
+                <div class="card__properties">
+                  <div class="card__properties-row">
+                    <div class="card__properties-label">1 литр</div>
+                    <div class="card__properties-value">100 Р.</div>
+                  </div>
                 </div>
               </div>
               <button class="card__button button button--primary" type="button">
@@ -244,13 +297,15 @@
               </button>
             </div>
             <div class="catalog__list-card card">
-              <h5 class="card__title">
-                Витамины
-              </h5>
-              <div class="card__properties">
-                <div class="card__properties-row">
-                  <div class="card__properties-label">1 упаковка (30 г)</div>
-                  <div class="card__properties-value">300 Р.</div>
+              <div class="card__inner">
+                <h5 class="card__title">
+                  Витамины
+                </h5>
+                <div class="card__properties">
+                  <div class="card__properties-row">
+                    <div class="card__properties-label">1 упаковка (30 г)</div>
+                    <div class="card__properties-value">300 Р.</div>
+                  </div>
                 </div>
               </div>
               <button class="card__button button button--primary" type="button">
@@ -262,9 +317,9 @@
             <svg class="promo__icon" width="78" height="80">
               <use xlink:href="img/sprite.svg#present"></use>
             </svg>
-            <h5 class="promo__title">
+            <span class="promo__title">
               Закажите все и получите чехол для кота в подарок!
-            </h5>
+            </span>
           </div>
         </div>
       </div>
@@ -307,7 +362,6 @@
       </div>
     </div>
   </footer>
-
 </body>
 
 </html>
