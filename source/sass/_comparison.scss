@@ -1,7 +1,7 @@
 .comparison {
   padding-top: 20px;
   padding-bottom: 50px;
-  background-color: $gray;
+  background-color: $bg-color;
 }
 
 .comparison__title {
@@ -52,7 +52,7 @@
   margin-top: 5px;
   padding: 2px 10px;
   text-align: center;
-  background-color: $gray;
+  background-color: $bg-color;
   transform: translateY(100%);
 }
 
