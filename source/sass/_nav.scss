@@ -11,6 +11,7 @@
 .nav__list {
   display: none;
   position: absolute;
+  z-index: 2;
   top: 58px;
   right: 0;
   left: 0;
