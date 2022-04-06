@@ -28,6 +28,7 @@
 }
 
 .actions__description {
+  @include regular();
+  margin: 0;
   flex: 1 1 auto;
-  margin-bottom: 0;
 }

@@ -7,9 +7,16 @@ $black: #000;
 
 $body-color: $dark-gray;
 $border-color: $light-gray;
-$headings-color: $black;
+
 $link-color: $body-color;
 
 $font-family-base: Arial, sans-serif;
 $font-family-headings: Oswald, sans-serif;
 $font-family-buttons: $font-family-headings;
+$font-size-base: 14px;
+
+$line-height-base: 1.3;
+
+$headings-color: $black;
+$headings-font-weight: 500;
+$headings-line-height: 1;

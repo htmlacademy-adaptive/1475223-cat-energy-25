@@ -1,7 +1,4 @@
-@mixin heading($font-size: 14px, $font-weight: 500, $color: $headings-color, $font-family: $font-family-headings) {
-  font-family: $font-family-headings;
-  font-size: $font-size;
-  font-weight: $font-weight;
-  color: $color;
-  line-height: 1;
+@mixin heading($fz, $lh: $headings-line-height, $fw: $headings-font-weight, $color: $headings-color) {
+  @include font($fz, $lh, $fw, $ff: $font-family-headings);
+  color: $headings-color;
 }

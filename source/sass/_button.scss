@@ -1,5 +1,5 @@
 .button {
-  @include heading($font-weight: 400);
+  @include heading(14px, 1);
   display: block;
   padding: 13px 26px;
   border: 1px solid transparent;

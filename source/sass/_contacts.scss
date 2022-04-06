@@ -1,16 +1,17 @@
 .contacts__caption {
+  display: flex;
   padding: 26px 0;
   background-color: $white;
-  display: flex;
 }
 
 .contacts__title {
+  @include heading(16px, 1.25, 400);
+  margin: 0;
   flex: 1 1 50%;
-  font-weight: 400;
   text-transform: uppercase;
-  margin-bottom: 0;
 }
 
 .contacts__address {
+  @include regular();
   flex: 1 1 50%;
 }

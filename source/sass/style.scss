@@ -3,8 +3,7 @@
 
 @import "variables";
 @import "normalize";
-@import "mixins/reset-list";
-@import "mixins/heading";
+@import "mixins";
 @import "visually-hidden";
 @import "button";
 @import "site-list";
@@ -18,4 +17,5 @@
 @import "contacts";
 @import "footer";
 @import "social";
+@import "section-title";
 @import "copyright";
