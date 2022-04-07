@@ -120,7 +120,7 @@ a {
   padding-bottom: 20px;
 }
 .hero::before {
-  background: linear-gradient(0deg, rgba(104, 183, 56, 0.86), rgba(104, 183, 56, 0.86)), url("/img/hero-bg.jpg");
+  background: linear-gradient(0deg, rgba(104, 183, 56, 0.86), rgba(104, 183, 56, 0.86)), url("img/hero-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -545,7 +545,7 @@ a {
 }
 
 .promo {
-  background: linear-gradient(0deg, rgba(104, 183, 56, 0.86), rgba(104, 183, 56, 0.86)), url("/img/promo.jpg");
+  background: linear-gradient(0deg, rgba(104, 183, 56, 0.86), rgba(104, 183, 56, 0.86)), url("img/promo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
