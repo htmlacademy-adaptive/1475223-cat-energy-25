@@ -1,7 +1,12 @@
+.contacts {
+  &--dark {
+    background-color: $bg-color;
+  }
+}
+
 .contacts__caption {
   display: flex;
   padding: 26px 0;
-  background-color: $white;
 }
 
 .contacts__title {

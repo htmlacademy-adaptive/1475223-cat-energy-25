@@ -53,42 +53,42 @@
       <div class="program__container container">
         <h2 class="program__title section-title">Подбор программы</h2>
         <form action="https://echo.htmlacademy.ru" method="post" class="program__form form">
-          <div class="form__section">
+          <div class="form__section form__section--hr">
             <div class="form__group form__group--required">
               <label class="form__label" for="name">Имя:</label>
               <div class="form__control">
-                <input name="name" type="text" id="name" required>
+                <input class="form__input" name="name" type="text" id="name" required>
               </div>
             </div>
             <div class="form__group form__group--required">
               <label class="form__label" for="weight">Вес:</label>
               <div class="form__control">
-                <input name="weight" type="number" id="weight" required>
+                <input class="form__input" name="weight" type="number" id="weight" required>
               </div>
             </div>
             <div class="form__group">
               <label class="form__label" for="age">Возраст (Лет)</label>
               <div class="form__control">
-                <input name="age" type="number" id="age">
+                <input class="form__input" name="age" type="number" id="age">
               </div>
             </div>
           </div>
           <div class="form__section">
             <div class="form__group form__group--reverse">
               <div class="form__control">
-                <input name="plan" type="radio" value="loss" id="loss" checked>
+                <input class="form__input-radio" name="plan" type="radio" value="loss" id="loss" checked>
               </div>
               <label class="form__label" for="loss">Похудение</label>
             </div>
             <div class="form__group form__group--reverse">
               <div class="form__control">
-                <input name="plan" type="radio" value="gain" id="gain">
+                <input class="form__input-radio" name="plan" type="radio" value="gain" id="gain">
               </div>
               <label class="form__label" for="gain">Набор массы</label>
             </div>
             <div class="form__group form__group--reverse">
               <div class="form__control">
-                <input name="plan" type="radio" value="unknown" id="unknown">
+                <input class="form__input-radio" name="plan" type="radio" value="unknown" id="unknown">
               </div>
               <label class="form__label" for="unknown">Не знаю(Нужен Ваш совет)</label>
             </div>
@@ -102,7 +102,8 @@
             <div class="form__group form__group--required">
               <label class="form__label" for="email">E-MAIL</label>
               <div class="form__control form__control--with-icon">
-                <input name="email" type="email" id="email" placeholder="KUKLACHEV@GMAIL.COM" required>
+                <input class="form__input" name="email" type="email" id="email" placeholder="KUKLACHEV@GMAIL.COM"
+                  required>
                 <svg class="form__icon" width="20" height="14">
                   <use xlink:href="/img/sprite.svg#email"></use>
                 </svg>
@@ -111,7 +112,7 @@
             <div class="form__group form__group--required">
               <label class="form__label" for="phone">ТЕЛЕФОН:</label>
               <div class="form__control form__control--with-icon form__control--phone">
-                <input name="phone" type="tel" id="phone" placeholder="8 (960) 900-60-90" required>
+                <input class="form__input" name="phone" type="tel" id="phone" placeholder="8 (960) 900-60-90" required>
                 <svg class="form__icon" width="22" height="22">
                   <use xlink:href="/img/sprite.svg#phone"></use>
                 </svg>
@@ -126,7 +127,8 @@
             </h3>
             <div class="form__group">
               <div class="form__control">
-                <textarea name="comments" cols="30" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+                <textarea class="form__input" name="comments" cols="30" rows="5"
+                  placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
             </div>
           </div>
@@ -137,28 +139,44 @@
               </span>
             </h3>
             <div class="form__group">
-              <div class="form__control">
-                <input name="sweetener" type="checkbox" id="sweetener">
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__input" name="sweetener" type="checkbox" id="sweetener">
+                <label class="custom-checkbox__inner" for="sweetener">
+                  <span class="custom-checkbox__label">
+                    Сахарозаменитель
+                  </span>
+                </label>
               </div>
-              <label class="form__label" for="sweetener">Сахарозаменитель</label>
             </div>
             <div class="form__group">
-              <div class="form__control">
-                <input name="water" type="checkbox" id="water">
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__input" name="water" type="checkbox" id="water">
+                <label class="custom-checkbox__inner" for="water">
+                  <span class="custom-checkbox__label">
+                    Питьевая вода
+                  </span>
+                </label>
               </div>
-              <label class="form__label" for="water">Вода</label>
             </div>
             <div class="form__group">
-              <div class="form__control">
-                <input name="milk" type="checkbox" id="milk">
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__input" name="milk" type="checkbox" id="milk">
+                <label class="custom-checkbox__inner" for="milk">
+                  <span class="custom-checkbox__label">
+                    Молоко
+                  </span>
+                </label>
               </div>
-              <label class="form__label" for="water">Молоко</label>
             </div>
             <div class="form__group">
-              <div class="form__control">
-                <input name="vitamins" type="checkbox" id="vitamins">
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__input" name="vitamins" type="checkbox" id="vitamins">
+                <label class="custom-checkbox__inner" for="vitamins">
+                  <span class="custom-checkbox__label">
+                    Витамины
+                  </span>
+                </label>
               </div>
-              <label class="form__label" for="vitamins">Витамины</label>
             </div>
           </div>
           <div class="form__bottom">
@@ -166,6 +184,23 @@
             <p class="form__description">* — Обязательные поля</p>
           </div>
         </form>
+      </div>
+    </section>
+
+    <section class="contacts contacts--dark">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="contacts__inner">
+        <div class="contacts__container contacts__container--dark container">
+          <div class="contacts__caption contacts__caption--dark">
+            <h4 class="contacts__title">
+              приглашаем к сотрудничеству дилеров!
+            </h4>
+            <div class="contacts__address">
+              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            </div>
+          </div>
+        </div>
+        <div class="contacts__map"></div>
       </div>
     </section>
   </main>

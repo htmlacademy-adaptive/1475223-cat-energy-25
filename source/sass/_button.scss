@@ -1,5 +1,6 @@
 .button {
   @include heading(14px, 1, 400);
+  cursor: pointer;
   display: inline-block;
   width: 100%;
   padding: 13px 26px;

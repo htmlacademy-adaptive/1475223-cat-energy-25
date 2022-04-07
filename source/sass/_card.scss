@@ -3,27 +3,42 @@
   display: flex;
   flex-wrap: wrap;
   padding: 25px 0;
-  border-top: 1px solid $border-color;
+
+  &::before,
+  &::after {
+    border-top: 1px solid $border-color;
+    position: absolute;
+    left: -9999px;
+    right: -9999px;
+  }
+
+  &::before {
+    content: "";
+    top: 0;
+  }
 
   &:last-of-type {
-    border-bottom: 1px solid $border-color;
+    &::after {
+      content: "";
+      bottom: 0;
+    }
   }
 
   &--show-more {
     flex-direction: column;
     align-items: center;
-  }
 
-  &--show-more .card__title {
-    margin-bottom: 10px;
-  }
+    .card__title {
+      margin-bottom: 10px;
+    }
 
-  &--show-more .card__description {
-    margin-bottom: 20px;
-  }
+    .card__description {
+      margin-bottom: 20px;
+    }
 
-  &--show-more .card__icon {
-    margin-bottom: 20px;
+    .card__icon {
+      margin-bottom: 20px;
+    }
   }
 }
 

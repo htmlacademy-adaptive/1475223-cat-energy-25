@@ -1,17 +1,23 @@
 .form__section {
   position: relative;
-  padding: 30px 0;
+  padding-top: 30px;
 
-  &:not(:last-of-type) {
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: -20px;
-      right: -20px;
-      border-top: 1px solid $border-color;
-    }
+  &--hr {
+    padding-bottom: 30px;
   }
+
+  &--hr::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -9999px;
+    right: -9999px;
+    border-top: 1px solid $border-color;
+  }
+}
+
+.form__bottom {
+  padding-top: 30px;
 }
 
 .form__section-title {
@@ -46,8 +52,10 @@
     margin-bottom: 15px;
   }
 
-  &--required .form__label::after {
-    content: "*";
+  &--required {
+    .form__label::after {
+      content: "*";
+    }
   }
 
   &--reverse {
@@ -70,6 +78,41 @@
   margin-right: 15px;
 }
 
+.form__input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid $input-border;
+}
+
+.form__input-radio {
+  display: grid;
+  place-content: center;
+  appearance: none;
+  background-color: $white;
+  margin: 0;
+  font: inherit;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $input-border;
+  border-radius: 50%;
+
+  &::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em $primary;
+  }
+
+  &:checked {
+    &::before {
+      transform: scale(1);
+    }
+  }
+}
+
 .form__control {
   flex: 1 1 auto;
 
@@ -82,43 +125,10 @@
     }
   }
 
-  @include styleable-inputs {
-    width: 100%;
-    padding: 14px 16px;
-    border: 1px solid $input-border;
-  }
-
-  input[type="radio"] {
-    display: grid;
-    place-content: center;
-    appearance: none;
-    background-color: $white;
-    margin: 0;
-    font: inherit;
-    width: 30px;
-    height: 30px;
-    border: 1px solid $input-border;
-    border-radius: 50%;
-
-    &::before {
-      content: "";
-      width: 14px;
-      height: 14px;
-      border-radius: 50%;
-      transform: scale(0);
-      transition: 120ms transform ease-in-out;
-      box-shadow: inset 1em 1em $primary;
-    }
-
-    &:checked::before {
-      transform: scale(1);
-    }
-  }
-
   &--with-icon {
     position: relative;
 
-    @include styleable-inputs {
+    .form__input {
       padding-right: 40px;
     }
   }
@@ -134,4 +144,11 @@
   position: absolute;
   right: 15px;
   top: calc(50% - 14px / 2);
+}
+
+.form__description {
+  @include regular($color: $headings-color);
+  margin-top: 20px;
+  margin-bottom: 0;
+  text-align: center;
 }
