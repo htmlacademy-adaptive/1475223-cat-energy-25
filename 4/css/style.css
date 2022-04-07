@@ -459,6 +459,10 @@ a {
   padding: 25px 0;
 }
 
+.catalog__list-promo {
+  margin-top: 25px;
+}
+
 .card {
   position: relative;
   display: flex;
@@ -491,6 +495,10 @@ a {
 }
 .card--show-more .card__icon {
   margin-bottom: 20px;
+}
+.card--list::before, .card--list::after {
+  left: 0;
+  right: 0;
 }
 
 .card__title {
