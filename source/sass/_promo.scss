@@ -1,5 +1,5 @@
 .promo {
-  @include background($primary, "img/promo.jpg");
+  @include background($primary, "../img/promo.jpg");
   padding: 60px;
   display: flex;
   flex-direction: column;
