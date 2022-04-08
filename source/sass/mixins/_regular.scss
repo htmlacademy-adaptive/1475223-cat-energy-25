@@ -1,0 +1,4 @@
+@mixin regular($fz: $font-size-base, $lh: $line-height-base, $color: $body-color) {
+  @include font($fz, $lh);
+  color: $color;
+}

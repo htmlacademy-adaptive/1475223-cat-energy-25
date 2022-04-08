@@ -1,0 +1,26 @@
+.footer {
+  background-color: $bg-color;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid $border-color;
+}
+
+.footer__social {
+  padding: 20px 0;
+  border-bottom: 1px solid $border-color;
+}
+
+.footer__copyright {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

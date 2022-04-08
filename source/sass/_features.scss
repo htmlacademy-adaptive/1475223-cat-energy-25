@@ -1,0 +1,51 @@
+.features__header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.features__footer {
+  border-top: 1px solid $border-color;
+  padding-top: 15px;
+}
+
+.features__icon {
+  margin-right: 20px;
+}
+
+.features__title {
+  @include heading(24px);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.features__description {
+  @include regular();
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.features__list {
+  @include reset-list();
+}
+
+.features__item {
+  padding: 20px;
+  background-color: $bg-color;
+
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+}
+
+.features__link {
+  @include heading(24px, $fw: 400);
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.features__icon-next {
+  margin-left: 15px;
+}

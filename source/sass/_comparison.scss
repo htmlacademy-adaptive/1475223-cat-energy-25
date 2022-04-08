@@ -1,0 +1,112 @@
+.comparison {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-color: $bg-color;
+}
+
+.comparison__title {
+  margin-bottom: 40px;
+}
+
+.comparison__description {
+  @include regular();
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.comparison__total {
+  @include heading(14px, $fw: 400);
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.comparison__metas {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.comparison__meta {
+  padding: 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 50%;
+  border-radius: 3px;
+  border: 1px solid $border-color;
+
+  &:not(:last-of-type) {
+    margin-right: 32px;
+  }
+}
+
+.comparison__meta-label {
+  @include heading(24px);
+  font-size: 24px;
+}
+
+.comparison__meta-description {
+  @include regular(12px, 1);
+  position: absolute;
+  display: inline-block;
+  margin-top: 5px;
+  padding: 2px 10px;
+  text-align: center;
+  background-color: $bg-color;
+  transform: translateY(100%);
+}
+
+.comparison__slider-before-pic,
+.comparison__slider-after-pic {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.comparison__slider--before {
+  .comparison__slider-before-pic {
+    display: block;
+  }
+}
+
+.comparison__slider-controls {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comparison__slider-control {
+  cursor: pointer;
+  border: 1px solid $border-color;
+  margin: 0 13px;
+  border-radius: 100px;
+  width: 90px;
+  height: 14px;
+  padding: 4px;
+  background-color: $white;
+  font-size: 0;
+}
+
+.comparison__slider-checkbox {
+  display: none;
+
+  &:checked + .comparison__slider-switch {
+    transform: translateX(100%);
+  }
+}
+
+.comparison__slider-switch {
+  width: 50%;
+  height: 100%;
+  border-radius: 100px;
+  background-color: $primary;
+  transform: translateX(0);
+  transition: transform 0.2s ease;
+}
+
+.comparison__slider-before,
+.comparison__slider-after {
+  @include heading(16px, $fw: 400);
+}

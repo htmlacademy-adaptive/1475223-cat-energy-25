@@ -1,0 +1,22 @@
+.contacts {
+  &--dark {
+    background-color: $bg-color;
+  }
+}
+
+.contacts__caption {
+  display: flex;
+  padding: 26px 0;
+}
+
+.contacts__title {
+  @include heading(16px, 1.25, 400);
+  margin: 0;
+  flex: 1 1 50%;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  @include regular();
+  flex: 1 1 50%;
+}
