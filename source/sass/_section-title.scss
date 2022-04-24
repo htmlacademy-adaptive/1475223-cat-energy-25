@@ -1,4 +1,9 @@
 .section-title {
   @include heading(32px);
   margin-top: 0;
+
+  @include tablet {
+    font-size: 60px;
+    margin-bottom: 30px;
+  }
 }

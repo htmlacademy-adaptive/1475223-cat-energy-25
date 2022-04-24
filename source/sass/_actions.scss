@@ -1,6 +1,10 @@
 .actions {
   padding-top: 20px;
   padding-bottom: 50px;
+
+  @include desktop {
+    padding: 60px 0;
+  }
 }
 
 .actions__title {
@@ -9,11 +13,26 @@
 
 .actions__list {
   @include reset-list();
+  display: grid;
+  row-gap: 15px;
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 150px;
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
 }
 
 .actions__item {
   display: flex;
-  margin-bottom: 20px;
+
+  @include tablet {
+    padding: 40px 0;
+  }
 }
 
 .actions__icon {

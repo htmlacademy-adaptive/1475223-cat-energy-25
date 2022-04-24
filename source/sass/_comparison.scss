@@ -2,10 +2,18 @@
   padding-top: 20px;
   padding-bottom: 50px;
   background-color: $bg-color;
+
+  @include desktop {
+    padding: 60px 0;
+  }
 }
 
 .comparison__title {
   margin-bottom: 40px;
+
+  @include tablet {
+    margin-bottom: 150px;
+  }
 }
 
 .comparison__description {
@@ -19,6 +27,15 @@
   margin-bottom: 40px;
   text-transform: uppercase;
   text-align: center;
+}
+
+.comparison__container {
+  display: grid;
+
+  @include desktop {
+    grid-template-columns: 1fr 2fr;
+    column-gap: 140px;
+  }
 }
 
 .comparison__metas {
