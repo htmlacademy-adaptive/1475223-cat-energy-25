@@ -16,6 +16,14 @@
     @include tablet {
       content: none;
     }
+
+    @include desktop {
+      content: "";
+      top: -80px;
+      left: 50%;
+      height: calc(100% + 80px);
+      bottom: 0;
+    }
   }
 }
 
@@ -44,11 +52,8 @@
   text-align: center;
 
   @include tablet {
-    text-align: left;
-  }
-
-  @include desktop {
     padding-top: 80px;
+    text-align: left;
   }
 }
 
@@ -93,5 +98,6 @@
     margin-top: 0;
     grid-row: 1 / -1;
     grid-column-start: 2;
+    transform: translateX(-120px);
   }
 }

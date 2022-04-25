@@ -4,17 +4,14 @@
 
 .footer__container {
   display: flex;
-  flex-direction: column;
-
-  @include tablet {
-    flex-direction: row;
-  }
+  flex-wrap: wrap;
 }
 
 .footer__logo,
 .footer__social,
 .footer__copyright {
   padding: 20px 0;
+  flex: 1 0 100%;
 
   @include tablet {
     padding: 55px 0;
@@ -26,6 +23,10 @@
 .footer__logo {
   text-align: center;
   border-bottom: 1px solid $border-color;
+
+  @include tablet {
+    text-align: left;
+  }
 }
 
 .footer__social {
@@ -38,6 +39,6 @@
   justify-content: space-between;
 
   @include tablet {
-    justify-content: center;
+    justify-content: flex-end;
   }
 }

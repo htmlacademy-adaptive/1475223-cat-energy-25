@@ -1,11 +1,17 @@
+.nav {
+  @include tablet {
+    margin-left: auto;
+  }
+}
+
 .nav__toggle {
   padding: 0;
   border: none;
   background-color: transparent;
-}
 
-.nav__inner {
-  display: flex;
+  @include tablet {
+    display: none;
+  }
 }
 
 .nav__list {
@@ -15,4 +21,9 @@
   top: 58px;
   right: 0;
   left: 0;
+
+  @include tablet {
+    position: static;
+    display: flex;
+  }
 }
