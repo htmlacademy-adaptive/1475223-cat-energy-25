@@ -4,23 +4,41 @@
 
 .footer__container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footer__logo,
+.footer__social,
+.footer__copyright {
+  padding: 20px 0;
+  flex: 1 0 100%;
+
+  @include tablet {
+    padding: 55px 0;
+    flex: 0 0 percentage(1/3);
+    border-bottom: none;
+  }
 }
 
 .footer__logo {
   text-align: center;
-  padding: 20px 0;
   border-bottom: 1px solid $border-color;
+
+  @include tablet {
+    text-align: left;
+  }
 }
 
 .footer__social {
-  padding: 20px 0;
   border-bottom: 1px solid $border-color;
 }
 
 .footer__copyright {
-  padding: 20px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include tablet {
+    justify-content: flex-end;
+  }
 }

@@ -2,19 +2,50 @@
   position: relative;
   padding: 10px 0;
   border-bottom: 1px solid $border-color;
+
+  @include tablet {
+    border-bottom: none;
+  }
 }
 
 .header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include tablet {
+    justify-content: flex-start;
+  }
 }
 
 .header__logo {
   font-size: 0;
 
-  img {
-    width: auto;
-    height: 38px;
+  &--sm {
+    img {
+      width: auto;
+      height: 38px;
+    }
+
+    @include tablet {
+      display: none;
+    }
   }
+
+  &--big {
+    display: none;
+    margin-right: 15px;
+
+    img {
+      height: 49px;
+    }
+
+    @include tablet {
+      display: block;
+    }
+  }
+}
+
+.header__logo-text {
+  font-size: 0;
 }
