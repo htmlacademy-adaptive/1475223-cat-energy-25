@@ -1,7 +1,35 @@
 .program {
   padding: 30px 0;
+
+  @include tablet {
+    padding: 60px 0;
+  }
+
+  @include desktop {
+    padding: 70px 0;
+  }
 }
 
 .program__title {
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+
+  @include tablet {
+    margin-bottom: 50px;
+  }
+}
+
+.program__subtitle {
+  @include heading($fz: 14px, $lh: 1.28, $fw: 400);
+  margin: 0;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  @include desktop {
+    margin-bottom: 60px;
+  }
 }

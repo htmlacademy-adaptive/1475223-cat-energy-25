@@ -19,7 +19,7 @@
 
     @include desktop {
       content: "";
-      top: -80px;
+      top: -160px;
       left: 50%;
       height: calc(100% + 80px);
       bottom: 0;
@@ -29,6 +29,7 @@
 
 .hero__button {
   @include tablet {
+    width: auto;
     justify-self: start;
     align-self: start;
     grid-row-start: 2;

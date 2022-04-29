@@ -1,0 +1,58 @@
+.additional-good {
+  padding: 20px 0;
+  display: grid;
+  row-gap: 15px;
+
+  &:not(:last-of-type) {
+    border-bottom: 1px solid $border-color;
+  }
+
+  @include tablet {
+    padding: 25px 40px;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  @include desktop {
+    align-items: center;
+    padding: 25px 0;
+    column-gap: 20px;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+}
+
+.additional-good__title {
+  @include heading(16px, $fw: 400);
+  margin: 0;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 20px;
+  }
+}
+
+.additional-good__properties {
+  @include regular(14px);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-self: center;
+  white-space: nowrap;
+}
+
+.additional-good__label,
+.additional-good__value {
+  flex: 0 0 50%;
+}
+
+.additional-good__value {
+  text-align: right;
+}
+
+.additional-good__button {
+  @include tablet {
+    grid-column: 1 / -1;
+  }
+
+  @include desktop {
+    grid-column: 3 / -1;
+  }
+}

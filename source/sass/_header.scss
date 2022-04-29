@@ -4,7 +4,12 @@
   border-bottom: 1px solid $border-color;
 
   @include tablet {
+    padding: 25px 0;
     border-bottom: none;
+  }
+
+  @include desktop {
+    padding: 50px 0;
   }
 }
 
@@ -48,4 +53,10 @@
 
 .header__logo-text {
   font-size: 0;
+
+  img {
+    @include tablet {
+      height: 18px;
+    }
+  }
 }
