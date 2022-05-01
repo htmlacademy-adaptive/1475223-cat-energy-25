@@ -23,7 +23,7 @@
 }
 
 .comparison__amount {
-  @include heading(14px, $fw: 400);
+  @include heading(14px);
   grid-column: 1 / -1;
   display: flex;
   text-transform: uppercase;
@@ -147,5 +147,5 @@
 
 .comparison__slider-before,
 .comparison__slider-after {
-  @include heading(16px, $fw: 400);
+  @include heading(16px);
 }

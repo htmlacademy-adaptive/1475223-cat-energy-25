@@ -118,7 +118,7 @@
 }
 
 .form__label {
-  @include heading(16px, $fw: 400, $color: $body-color);
+  @include heading(16px, $color: $body-color);
   flex: 0 0 auto;
   text-transform: uppercase;
   margin-right: 15px;
@@ -166,7 +166,7 @@
   textarea {
     &,
     &::placeholder {
-      @include heading(16px, $fw: 400, $color: $input-placeholder-color);
+      @include heading(16px, $color: $input-placeholder-color);
       text-transform: uppercase;
     }
   }

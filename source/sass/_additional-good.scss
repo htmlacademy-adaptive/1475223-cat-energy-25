@@ -21,7 +21,7 @@
 }
 
 .additional-good__title {
-  @include heading(16px, $fw: 400);
+  @include heading(16px);
   margin: 0;
   text-transform: uppercase;
 

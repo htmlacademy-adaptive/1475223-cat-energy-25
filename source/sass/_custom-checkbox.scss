@@ -14,7 +14,7 @@
 }
 
 .custom-checkbox__label {
-  @include heading(16px, $fw: 400, $color: $body-color);
+  @include heading(16px, $color: $body-color);
   text-transform: uppercase;
 }
 

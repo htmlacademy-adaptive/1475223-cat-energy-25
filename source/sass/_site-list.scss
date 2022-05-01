@@ -15,7 +15,7 @@
 
 .site-list__item {
   a {
-    @include heading($fz: 20px, $fw: 400);
+    @include heading($fz: 20px);
     font-size: 18px;
     padding: 20px;
     display: flex;

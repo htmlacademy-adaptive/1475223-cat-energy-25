@@ -122,7 +122,7 @@
 }
 
 .card__title {
-  @include heading($fz: 16px, $lh: 1.25, $fw: 400);
+  @include heading($fz: 16px, $lh: 1.25);
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 20px;

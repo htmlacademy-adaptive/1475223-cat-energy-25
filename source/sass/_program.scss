@@ -6,7 +6,8 @@
   }
 
   @include desktop {
-    padding: 70px 0;
+    padding-top: 20px;
+    padding-bottom: 60px;
   }
 }
 
@@ -19,7 +20,7 @@
 }
 
 .program__subtitle {
-  @include heading($fz: 14px, $lh: 1.28, $fw: 400);
+  @include heading($fz: 14px, $lh: 1.28);
   margin: 0;
   text-transform: uppercase;
 
