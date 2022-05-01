@@ -928,7 +928,6 @@ a {
 @media (min-width: 1200px) {
   .catalog__list-inner {
     grid-template-columns: 80% 20%;
-    /* column-gap: 80px; */
   }
 }
 
@@ -938,6 +937,45 @@ a {
   flex-wrap: wrap;
   padding: 20px 0;
 }
+
+.card--show-more .card__inner {
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .card--show-more .card__inner {
+    margin-bottom: 0;
+    flex-basis: auto;
+  }
+}
+@media (min-width: 768px) {
+  .card--show-more .card__button {
+    flex-grow: 0;
+    flex-basis: auto;
+  }
+}
+.card--show-more .card__icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .card--show-more .card__icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 50px;
+  }
+}
+.card--show-more .card__title {
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .card--show-more {
+    padding: 40px;
+    border: 1px solid #e6e6e6;
+    flex-direction: column;
+  }
+}
+
 .card--product::before, .card--product::after {
   position: absolute;
   z-index: -1;
@@ -993,43 +1031,6 @@ a {
 @media (min-width: 768px) {
   .card--product {
     padding: 0 40px 40px 40px;
-  }
-}
-.card--show-more .card__inner {
-  align-items: center;
-}
-@media (min-width: 768px) {
-  .card--show-more .card__inner {
-    margin-bottom: 0;
-    flex-basis: auto;
-  }
-}
-@media (min-width: 768px) {
-  .card--show-more .card__button {
-    flex-grow: 0;
-    flex-basis: auto;
-  }
-}
-.card--show-more .card__icon {
-  width: 30px;
-  height: 30px;
-  margin-bottom: 20px;
-}
-@media (min-width: 768px) {
-  .card--show-more .card__icon {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 50px;
-  }
-}
-.card--show-more .card__title {
-  margin-bottom: 10px;
-}
-@media (min-width: 768px) {
-  .card--show-more {
-    padding: 40px;
-    border: 1px solid #e6e6e6;
-    flex-direction: column;
   }
 }
 
@@ -1202,6 +1203,7 @@ a {
     padding-bottom: 70px;
   }
 }
+
 .form__section--hr::before {
   content: "";
   position: absolute;
@@ -1239,20 +1241,20 @@ a {
   }
 }
 
-.form__section-title section-title--normal {
+.form__section-title {
   font: 500 24px/1 oswald, sans-serif;
   color: #000000;
   position: relative;
   margin-top: 0;
   margin-bottom: 35px;
 }
-.form__section-title section-title--normal span {
+.form__section-title span {
   display: inline-block;
   margin-left: -20px;
   padding: 0 20px;
   background-color: #ffffff;
 }
-.form__section-title section-title--normal::before {
+.form__section-title::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -1262,7 +1264,7 @@ a {
   border-top: 2px solid #68b738;
 }
 @media (min-width: 768px) {
-  .form__section-title section-title--normal {
+  .form__section-title {
     font-size: 36px;
     margin-bottom: 70px;
   }
