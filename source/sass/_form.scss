@@ -25,21 +25,21 @@
   @include desktop {
     padding-bottom: 70px;
   }
+}
 
-  &--hr {
+.form__section--hr {
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -9999px;
+    right: -9999px;
+    border-top: 1px solid $border-color;
+  }
+
+  @include tablet {
     &::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: -9999px;
-      right: -9999px;
-      border-top: 1px solid $border-color;
-    }
-
-    @include tablet {
-      &::before {
-        content: none;
-      }
+      content: none;
     }
   }
 }
@@ -65,7 +65,7 @@
   }
 }
 
-.form__section-title section-title--normal {
+.form__section-title {
   @include heading(24px);
   position: relative;
   margin-top: 0;
@@ -215,7 +215,4 @@
   @include desktop {
     grid-template-columns: repeat(4, 1fr);
   }
-}
-
-.form__checkbox-item {
 }

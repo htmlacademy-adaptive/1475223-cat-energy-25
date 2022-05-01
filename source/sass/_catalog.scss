@@ -47,7 +47,6 @@
     margin-right: 80px;
     border: none;
   }
-
 }
 
 .catalog__list-inner {
@@ -56,6 +55,5 @@
 
   @include desktop {
     grid-template-columns: 80% 20%;
-    /* column-gap: 80px; */
   }
 }
