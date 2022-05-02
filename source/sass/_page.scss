@@ -2,3 +2,17 @@
 .page__body {
   overflow-x: hidden;
 }
+
+.page--home {
+  .site-list__item a {
+    @include desktop {
+      color: $white;
+    }
+  }
+
+  .site-list__item--active a {
+    @include desktop {
+      border-bottom-color: $white;
+    }
+  }
+}

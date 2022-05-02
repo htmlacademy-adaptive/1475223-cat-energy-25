@@ -12,8 +12,11 @@
 <body class="page__body">
   <header class="header">
     <div class="header__container container">
-      <a href="index.html" class="header__logo">
+      <a href="index.html" class="header__logo header__logo--sm">
         <img src="img/logo-mobile.svg" alt="Функциональное питание для котов «CAT ENERGY»">
+      </a>
+      <a href="index.html" class="header__logo header__logo--big">
+        <img src="img/logo-big.svg" alt="Функциональное питание для котов «CAT ENERGY»">
       </a>
       <a href="index.html" class="header__logo-text">
         <img src="img/footer-logo.svg" alt="Функциональное питание для котов «CAT ENERGY»">
@@ -27,12 +30,12 @@
         </button>
         <div class="nav__inner">
           <ul class="nav__list site-list">
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item">
               <a href="index.html">
                 Главная
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--active">
               <a href="catalog.html">
                 Каталог продукции
               </a>
@@ -51,11 +54,11 @@
   <main class="main-content">
     <section class="catalog">
       <div class="catalog__container container">
-        <h2 class="catalog__title section-title">Каталог продукции</h2>
+        <h2 class="catalog__title section-title section-title--normal">Каталог продукции</h2>
         <div class="catalog__cards">
-          <div class="catalog__card card">
+          <div class="catalog__card card card--product">
             <div class="card__img">
-              <img src="img/catalog-1-desktop.jpg" alt="Cat Energy PRO 500 г">
+              <img src="img/catalog-1-desktop.png" alt="Cat Energy PRO 500 г">
             </div>
             <div class="card__inner">
               <h5 class="card__title">Cat Energy PRO 500 г</h5>
@@ -77,10 +80,11 @@
             <button class="card__button button button--primary" type="button">
               заказать
             </button>
+
           </div>
-          <div class="catalog__card card">
+          <div class="catalog__card card card--product">
             <div class="card__img">
-              <img src="img/catalog-2-desktop.jpg" alt="Cat Energy PRO 1000 г">
+              <img src="img/catalog-2-desktop.png" alt="Cat Energy PRO 1000 г">
             </div>
             <div class="card__inner">
               <h5 class="card__title">Cat Energy PRO 1000 г</h5>
@@ -99,14 +103,15 @@
                 </div>
               </div>
             </div>
+
             <button class="card__button button button--primary" type="button">
               заказать
             </button>
           </div>
 
-          <div class="catalog__card card">
+          <div class="catalog__card card card--product">
             <div class="card__img">
-              <img src="img/catalog-3-desktop.jpg" alt="Cat Energy SLIM 500 г">
+              <img src="img/catalog-3-desktop.png" alt="Cat Energy SLIM 500 г">
             </div>
             <div class="card__inner">
               <h5 class="card__title">Cat Energy PRO 1000 г</h5>
@@ -130,9 +135,9 @@
             </button>
           </div>
 
-          <div class="catalog__card card">
+          <div class="catalog__card card card--product">
             <div class="card__img">
-              <img src="img/catalog-4-desktop.jpg" alt="Cat Energy SLIM 1000 г">
+              <img src="img/catalog-4-desktop.png" alt="Cat Energy SLIM 1000 г">
             </div>
             <div class="card__inner">
               <h5 class="card__title">Cat Energy PRO 1000 г</h5>
@@ -151,14 +156,16 @@
                 </div>
               </div>
             </div>
+
             <button class="card__button button button--primary" type="button">
               заказать
             </button>
+
           </div>
 
-          <div class="catalog__card card">
+          <div class="catalog__card card card--product">
             <div class="card__img">
-              <img src="img/catalog-5-desktop.jpg" alt="Cat Energy SLIM 500 г">
+              <img src="img/catalog-5-desktop.png" alt="Cat Energy SLIM 500 г">
             </div>
             <div class="card__inner">
               <h5 class="card__title">Cat Energy SLIM 500 г</h5>
@@ -177,14 +184,16 @@
                 </div>
               </div>
             </div>
+
             <button class="card__button button button--primary" type="button">
               заказать
             </button>
+
           </div>
 
-          <div class="catalog__card card">
+          <div class="catalog__card card card--product">
             <div class="card__img">
-              <img src="img/catalog-6-desktop.jpg" alt="Cat Energy SLIM 1000 г">
+              <img src="img/catalog-6-desktop.png" alt="Cat Energy SLIM 1000 г">
             </div>
             <div class="card__inner">
               <h5 class="card__title">Cat Energy SLIM 1000 г</h5>
@@ -203,14 +212,16 @@
                 </div>
               </div>
             </div>
+
             <button class="card__button button button--primary" type="button">
               заказать
             </button>
+
           </div>
 
-          <div class="catalog__card card">
+          <div class="catalog__card card card--product">
             <div class="card__img">
-              <img src="img/catalog-7-desktop.jpg" alt="Cat Energy SLIM 500 г">
+              <img src="img/catalog-7-desktop.png" alt="Cat Energy SLIM 500 г">
             </div>
             <div class="card__inner">
               <h5 class="card__title">Cat Energy SLIM 500 г</h5>
@@ -229,97 +240,94 @@
                 </div>
               </div>
             </div>
+
             <button class="card__button button button--primary" type="button">
               заказать
             </button>
+
           </div>
 
           <div class="catalog__card card card--show-more">
-            <svg class="card__icon" width="30" height="30">
-              <use xlink:href="img/sprite.svg#plus"></use>
-            </svg>
-            <h5 class="card__title">Показать еще 100500 товаров</h5>
-            <p class="card__description">На самом деле вкусов гораздо больше!</p>
+            <div class="card__inner">
+              <svg class="card__icon">
+                <use xlink:href="img/sprite.svg#plus"></use>
+              </svg>
+              <h5 class="card__title">Показать еще 100500 товаров</h5>
+              <p class="card__description">На самом деле вкусов гораздо больше!</p>
+            </div>
+
             <button class="card__button button button--secondary" type="button">
               показать все
             </button>
+
           </div>
         </div>
+
         <div class="catalog__list">
-          <h3 class="section-title">Дополнительные товары</h3>
-          <div class="catalog__list-items">
-            <div class="catalog__list-card card card--list">
-              <div class="card__inner">
-                <h5 class="card__title">
+          <h3 class="section-title section-title--crossed">
+            <span>
+              Дополнительные товары
+            </span>
+          </h3>
+          <div class="catalog__list-inner">
+            <div class="catalog__list-items">
+              <div class="additional-good">
+                <h5 class="additional-good__title">
                   Сахарозаменитель
                 </h5>
-                <div class="card__properties">
-                  <div class="card__properties-row">
-                    <div class="card__properties-label">1 упаковка (100 г)</div>
-                    <div class="card__properties-value">200 Р.</div>
-                  </div>
+                <div class="additional-good__properties">
+                  <div class="additional-good__label">1 упаковка (100 г)</div>
+                  <div class="additional-good__value">200 Р.</div>
                 </div>
+                <button class="additional-good__button button button--primary" type="button">
+                  заказать
+                </button>
               </div>
-              <button class="card__button button button--secondary" type="button">
-                заказать
-              </button>
-            </div>
-            <div class="catalog__list-card card card--list">
-              <div class="card__inner">
-                <h5 class="card__title">
+              <div class="additional-good">
+                <h5 class="additional-good__title">
                   Питьевая вода
                 </h5>
-                <div class="card__properties">
-                  <div class="card__properties-row">
-                    <div class="card__properties-label">5 литров</div>
-                    <div class="card__properties-value">50 Р.</div>
-                  </div>
+                <div class="additional-good__properties">
+                  <div class="additional-good__label">1 упаковка (100 г)</div>
+                  <div class="additional-good__value">200 Р.</div>
                 </div>
+                <button class="additional-good__button button button--primary" type="button">
+                  заказать
+                </button>
               </div>
-              <button class="card__button button button--secondary" type="button">
-                заказать
-              </button>
-            </div>
-            <div class="catalog__list-card card card--list">
-              <div class="card__inner">
-                <h5 class="card__title">
+              <div class="additional-good">
+                <h5 class="additional-good__title">
                   Молоко
                 </h5>
-                <div class="card__properties">
-                  <div class="card__properties-row">
-                    <div class="card__properties-label">1 литр</div>
-                    <div class="card__properties-value">100 Р.</div>
-                  </div>
+                <div class="additional-good__properties">
+                  <div class="additional-good__label">1 упаковка (100 г)</div>
+                  <div class="additional-good__value">200 Р.</div>
                 </div>
+                <button class="additional-good__button button button--primary" type="button">
+                  заказать
+                </button>
               </div>
-              <button class="card__button button button--secondary" type="button">
-                заказать
-              </button>
-            </div>
-            <div class="catalog__list-card card card--list">
-              <div class="card__inner">
-                <h5 class="card__title">
+              <div class="additional-good">
+                <h5 class="additional-good__title">
                   Витамины
                 </h5>
-                <div class="card__properties">
-                  <div class="card__properties-row">
-                    <div class="card__properties-label">1 упаковка (30 г)</div>
-                    <div class="card__properties-value">300 Р.</div>
-                  </div>
+                <div class="additional-good__properties">
+                  <div class="additional-good__label">1 упаковка (100 г)</div>
+                  <div class="additional-good__value">200 Р.</div>
                 </div>
+                <button class="additional-good__button button button--primary" type="button">
+                  заказать
+                </button>
               </div>
-              <button class="card__button button button--secondary" type="button">
-                заказать
-              </button>
             </div>
-          </div>
-          <div class="catalog__list-promo promo">
-            <svg class="promo__icon" width="78" height="80">
-              <use xlink:href="img/sprite.svg#present"></use>
-            </svg>
-            <span class="promo__title">
-              Закажите все и получите чехол для кота в подарок!
-            </span>
+            <div class="catalog__list-promo promo">
+              <svg class="promo__icon" width="78" height="80">
+                <use xlink:href="img/sprite.svg#present"></use>
+              </svg>
+              <span class="promo__title">
+                Закажите все и получите чехол для кота в подарок!
+              </span>
+            </div>
           </div>
         </div>
       </div>

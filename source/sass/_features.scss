@@ -118,7 +118,7 @@
 }
 
 .features__link {
-  @include heading(24px, $fw: 400);
+  @include heading(24px);
   display: flex;
   align-items: center;
   padding-top: 15px;

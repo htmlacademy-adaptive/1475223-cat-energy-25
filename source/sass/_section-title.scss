@@ -1,9 +1,39 @@
 .section-title {
-  @include heading(32px);
+  @include heading(24px);
   margin-top: 0;
 
-  @include tablet {
-    font-size: 60px;
-    margin-bottom: 30px;
+  &--normal {
+    @include tablet {
+      font-size: 60px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &--crossed {
+    @include heading(24px);
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 35px;
+
+    span {
+      display: inline-block;
+      margin-left: -20px;
+      padding: 0 20px;
+      background-color: $white;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 14px;
+      left: -9999px;
+      right: -9999px;
+      border-top: 2px solid $primary;
+    }
+
+    @include tablet {
+      font-size: 36px;
+    }
   }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page page--form" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -12,8 +12,11 @@
 <body class="page__body">
   <header class="header">
     <div class="header__container container">
-      <a href="index.html" class="header__logo">
+      <a href="index.html" class="header__logo header__logo--sm">
         <img src="img/logo-mobile.svg" alt="Функциональное питание для котов «CAT ENERGY»">
+      </a>
+      <a href="index.html" class="header__logo header__logo--big">
+        <img src="img/logo-big.svg" alt="Функциональное питание для котов «CAT ENERGY»">
       </a>
       <a href="index.html" class="header__logo-text">
         <img src="img/footer-logo.svg" alt="Функциональное питание для котов «CAT ENERGY»">
@@ -27,7 +30,7 @@
         </button>
         <div class="nav__inner">
           <ul class="nav__list site-list">
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item">
               <a href="index.html">
                 Главная
               </a>
@@ -37,7 +40,7 @@
                 Каталог продукции
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--active">
               <a href="form.html">
                 Подбор программы
               </a>
@@ -51,46 +54,56 @@
   <main class="main-content">
     <section class="program">
       <div class="program__container container">
-        <h2 class="program__title section-title">Подбор программы</h2>
+        <h2 class="program__title section-title section-title--normal">Подбор программы</h2>
+        <p class="program__subtitle">
+          Заполните анкету, и мы подберем
+          программу питания для вашего кота
+        </p>
         <form action="https://echo.htmlacademy.ru" method="post" class="program__form form">
-          <div class="form__section form__section--hr">
-            <div class="form__group form__group--required">
-              <label class="form__label" for="name">Имя:</label>
-              <div class="form__control">
-                <input class="form__input" name="name" type="text" id="name" required>
+          <div class="form__row form__row--inline">
+            <div class="form__section form__section--hr">
+              <div class="form__row form__row--col">
+                <div class="form__group form__group--required">
+                  <label class="form__label" for="name">Имя:</label>
+                  <div class="form__control">
+                    <input class="form__input" name="name" type="text" id="name" required>
+                  </div>
+                </div>
+                <div class="form__group form__group--required">
+                  <label class="form__label" for="weight">Вес (КГ):</label>
+                  <div class="form__control">
+                    <input class="form__input" name="weight" type="number" id="weight" required>
+                  </div>
+                </div>
+                <div class="form__group">
+                  <label class="form__label" for="age">Возраст (Лет)</label>
+                  <div class="form__control">
+                    <input class="form__input" name="age" type="number" id="age">
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="form__group form__group--required">
-              <label class="form__label" for="weight">Вес:</label>
-              <div class="form__control">
-                <input class="form__input" name="weight" type="number" id="weight" required>
+            <div class="form__section">
+              <div class="form__radio">
+                <div class="form__group form__group--reverse">
+                  <div class="form__control">
+                    <input class="form__input-radio" name="plan" type="radio" value="loss" id="loss" checked>
+                  </div>
+                  <label class="form__label" for="loss">Похудение</label>
+                </div>
+                <div class="form__group form__group--reverse">
+                  <div class="form__control">
+                    <input class="form__input-radio" name="plan" type="radio" value="gain" id="gain">
+                  </div>
+                  <label class="form__label" for="gain">Набор массы</label>
+                </div>
+                <div class="form__group form__group--reverse">
+                  <div class="form__control">
+                    <input class="form__input-radio" name="plan" type="radio" value="unknown" id="unknown">
+                  </div>
+                  <label class="form__label" for="unknown">Не знаю(Нужен Ваш совет)</label>
+                </div>
               </div>
-            </div>
-            <div class="form__group">
-              <label class="form__label" for="age">Возраст (Лет)</label>
-              <div class="form__control">
-                <input class="form__input" name="age" type="number" id="age">
-              </div>
-            </div>
-          </div>
-          <div class="form__section">
-            <div class="form__group form__group--reverse">
-              <div class="form__control">
-                <input class="form__input-radio" name="plan" type="radio" value="loss" id="loss" checked>
-              </div>
-              <label class="form__label" for="loss">Похудение</label>
-            </div>
-            <div class="form__group form__group--reverse">
-              <div class="form__control">
-                <input class="form__input-radio" name="plan" type="radio" value="gain" id="gain">
-              </div>
-              <label class="form__label" for="gain">Набор массы</label>
-            </div>
-            <div class="form__group form__group--reverse">
-              <div class="form__control">
-                <input class="form__input-radio" name="plan" type="radio" value="unknown" id="unknown">
-              </div>
-              <label class="form__label" for="unknown">Не знаю(Нужен Ваш совет)</label>
             </div>
           </div>
           <div class="form__section">
@@ -99,23 +112,26 @@
                 Контактные данные (владельца кота)
               </span>
             </h3>
-            <div class="form__group form__group--required">
-              <label class="form__label" for="email">E-MAIL</label>
-              <div class="form__control form__control--with-icon">
-                <input class="form__input" name="email" type="email" id="email" placeholder="KUKLACHEV@GMAIL.COM"
-                  required>
-                <svg class="form__icon" width="20" height="14">
-                  <use xlink:href="img/sprite.svg#email"></use>
-                </svg>
+            <div class="form__row form__row--inline">
+              <div class="form__group form__group--required">
+                <label class="form__label" for="email">E-MAIL</label>
+                <div class="form__control form__control--with-icon">
+                  <input class="form__input" name="email" type="email" id="email" placeholder="KUKLACHEV@GMAIL.COM"
+                    required>
+                  <svg class="form__icon" width="20" height="14">
+                    <use xlink:href="img/sprite.svg#email"></use>
+                  </svg>
+                </div>
               </div>
-            </div>
-            <div class="form__group form__group--required">
-              <label class="form__label" for="phone">ТЕЛЕФОН:</label>
-              <div class="form__control form__control--with-icon form__control--phone">
-                <input class="form__input" name="phone" type="tel" id="phone" placeholder="8 (960) 900-60-90" required>
-                <svg class="form__icon" width="22" height="22">
-                  <use xlink:href="img/sprite.svg#phone"></use>
-                </svg>
+              <div class="form__group form__group--required">
+                <label class="form__label" for="phone">ТЕЛЕФОН:</label>
+                <div class="form__control form__control--with-icon form__control--phone">
+                  <input class="form__input" name="phone" type="tel" id="phone" placeholder="8 (960) 900-60-90"
+                    required>
+                  <svg class="form__icon" width="22" height="22">
+                    <use xlink:href="img/sprite.svg#phone"></use>
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
@@ -138,44 +154,46 @@
                 Дополнительно
               </span>
             </h3>
-            <div class="form__group">
-              <div class="custom-checkbox">
-                <input class="custom-checkbox__input" name="sweetener" type="checkbox" id="sweetener">
-                <label class="custom-checkbox__inner" for="sweetener">
-                  <span class="custom-checkbox__label">
-                    Сахарозаменитель
-                  </span>
-                </label>
+            <div class="form__checkbox-list">
+              <div class="form__checkbox-item form__group">
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__input" name="sweetener" type="checkbox" id="sweetener">
+                  <label class="custom-checkbox__inner" for="sweetener">
+                    <span class="custom-checkbox__label">
+                      Сахарозаменитель
+                    </span>
+                  </label>
+                </div>
               </div>
-            </div>
-            <div class="form__group">
-              <div class="custom-checkbox">
-                <input class="custom-checkbox__input" name="water" type="checkbox" id="water">
-                <label class="custom-checkbox__inner" for="water">
-                  <span class="custom-checkbox__label">
-                    Питьевая вода
-                  </span>
-                </label>
+              <div class="form__checkbox-item form__group">
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__input" name="water" type="checkbox" id="water">
+                  <label class="custom-checkbox__inner" for="water">
+                    <span class="custom-checkbox__label">
+                      Питьевая вода
+                    </span>
+                  </label>
+                </div>
               </div>
-            </div>
-            <div class="form__group">
-              <div class="custom-checkbox">
-                <input class="custom-checkbox__input" name="milk" type="checkbox" id="milk">
-                <label class="custom-checkbox__inner" for="milk">
-                  <span class="custom-checkbox__label">
-                    Молоко
-                  </span>
-                </label>
+              <div class="form__checkbox-item form__group">
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__input" name="milk" type="checkbox" id="milk">
+                  <label class="custom-checkbox__inner" for="milk">
+                    <span class="custom-checkbox__label">
+                      Молоко
+                    </span>
+                  </label>
+                </div>
               </div>
-            </div>
-            <div class="form__group">
-              <div class="custom-checkbox">
-                <input class="custom-checkbox__input" name="vitamins" type="checkbox" id="vitamins">
-                <label class="custom-checkbox__inner" for="vitamins">
-                  <span class="custom-checkbox__label">
-                    Витамины
-                  </span>
-                </label>
+              <div class="form__checkbox-item form__group">
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__input" name="vitamins" type="checkbox" id="vitamins">
+                  <label class="custom-checkbox__inner" for="vitamins">
+                    <span class="custom-checkbox__label">
+                      Витамины
+                    </span>
+                  </label>
+                </div>
               </div>
             </div>
           </div>
@@ -241,6 +259,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/app.js" type="text/javascript"></script>
 </body>
 
 </html>
