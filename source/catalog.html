@@ -10,7 +10,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header">
+  <header class="header js-header">
     <div class="header__container container">
       <a href="index.html" class="header__logo header__logo--sm">
         <img src="img/logo-mobile.svg" alt="Функциональное питание для котов «CAT ENERGY»">
@@ -22,11 +22,10 @@
         <img src="img/footer-logo.svg" alt="Функциональное питание для котов «CAT ENERGY»">
       </a>
       <nav class="nav">
-        <button class="nav__toggle js-menu-toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-          <svg width="24" height="18">
-            <use xlink:href="img/sprite.svg#hamburger"></use>
-          </svg>
+        <button class="nav__toggle hamburger js-menu-toggle" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
         <div class="nav__inner">
           <ul class="nav__list site-list js-menu">
@@ -385,6 +384,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/app.js" type="text/javascript"></script>
 </body>
 
 </html>

@@ -28,6 +28,8 @@
   }
 
   &--active a {
-    border-bottom: 2px solid $primary;
+    @include tablet {
+      border-bottom: 2px solid $primary;
+    }
   }
 }

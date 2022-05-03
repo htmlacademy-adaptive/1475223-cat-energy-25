@@ -5,9 +5,10 @@ function changeSliderValue() {
   slider.style.setProperty('--slider-value', sliderRange.value + '%');
 }
 
-const menu = document.querySelector('.js-menu');
+const header = document.querySelector('.js-header');
 document.addEventListener('click', function (_e) {
-  menu.classList.remove('nav__list--opened');
+  header.classList.remove('header--menu-opened');
+  toggle.classList.remove('hamburger--close');
 });
 
 const toggle = document.querySelector('.js-menu-toggle');
@@ -15,6 +16,7 @@ if (toggle) {
   toggle.addEventListener('click', function (e) {
     e.preventDefault();
     e.stopPropagation();
-    menu.classList.toggle('nav__list--opened');
+    header.classList.toggle('header--menu-opened');
+    toggle.classList.toggle('hamburger--close');
   });
 }
