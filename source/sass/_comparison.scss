@@ -65,14 +65,18 @@
   display: grid;
 
   @include desktop {
-    grid-template-columns: 1fr 2fr;
-    column-gap: 140px;
+    grid-template-columns: 1fr 1fr;
+    /* column-gap: 140px; */
   }
 }
 
 .comparison__stats {
   display: flex;
   flex-direction: column;
+
+  @include desktop {
+    padding-right: 180px;
+  }
 }
 
 .comparison__stats-inner {
@@ -145,6 +149,7 @@
 
   @include tablet {
     position: relative;
+
     &::before {
       content: "";
       position: absolute;
@@ -212,12 +217,12 @@
 }
 
 .comparison__slider-range {
-  -webkit-appearance: none;
+  appearance: none;
   width: 100%;
   background: transparent;
 
   &::-webkit-slider-thumb {
-    -webkit-appearance: none;
+    appearance: none;
     position: relative;
     cursor: pointer;
     border-radius: 50%;

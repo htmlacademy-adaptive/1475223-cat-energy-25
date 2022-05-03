@@ -4,21 +4,26 @@
   padding-bottom: 50px;
   counter-reset: action;
 
+  &::before {
+    position: absolute;
+    border-top: 1px solid $border-color;
+    bottom: 0;
+    right: -9999px;
+    left: -9999px;
+  }
+
   @include tablet {
     padding-top: 40px;
     padding-bottom: 100px;
+
     &::before {
       content: "";
-      position: absolute;
-      border-top: 1px solid $border-color;
-      bottom: 0;
-      right: -9999px;
-      left: -9999px;
     }
   }
 
   @include desktop {
     padding: 60px 0;
+
     &::before {
       content: none;
     }

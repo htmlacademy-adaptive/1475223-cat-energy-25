@@ -1,6 +1,14 @@
-.contacts {
-  &--dark {
+.contacts--dark {
+  .contacts__container {
     background-color: $bg-color;
+  }
+
+  .contacts__caption {
+    background-color: $bg-color;
+
+    @include desktop {
+      background-color: $white;
+    }
   }
 }
 
