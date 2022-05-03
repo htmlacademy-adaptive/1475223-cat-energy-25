@@ -120,7 +120,7 @@
           </li>
           <li class="actions__item">
             <div class="actions__icon">
-              <svg width="30" height="31">
+              <svg width="29" height="33">
                 <use xlink:href="img/sprite.svg#tub"></use>
               </svg>
             </div>
@@ -140,7 +140,7 @@
           </li>
           <li class="actions__item">
             <div class="actions__icon">
-              <svg width="33" height="33">
+              <svg width="25" height="30">
                 <use xlink:href="img/sprite.svg#alarm"></use>
               </svg>
             </div>
@@ -180,15 +180,17 @@
             </div>
           </div>
         </div>
-        <div class="comparison__slider comparison__slider--before">
-          <img class="comparison__slider-before-pic" src="img/before-mobile.png" alt="">
-          <img class="comparison__slider-after-pic" src="img/after-mobile.png" alt="">
+        <div class="comparison__slider js-slider">
+          <div class="comparison__slider-item">
+            <img src="img/cat-fat-tablet-1x.png" alt="Cat before">
+          </div>
+          <div class="comparison__slider-item">
+            <img src="img/cat-skinny-tablet-1x.png" alt="Cat after">
+          </div>
           <div class="comparison__slider-controls">
             <div class="comparison__slider-before">БЫЛО</div>
-            <label class="comparison__slider-control">
-              <input class="comparison__slider-checkbox" type="checkbox">
-              <div class="comparison__slider-switch"></div>
-            </label>
+            <input value="50" class="comparison__slider-range js-slider__range" oninput="changeSliderValue()"
+              type="range">
             <div class="comparison__slider-after">СТАЛО</div>
           </div>
         </div>
@@ -197,17 +199,18 @@
 
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <div id="map" class="contacts__inner">
-        <div class="contacts__container container">
-          <div class="contacts__caption">
-            <h4 class="contacts__title">
-              приглашаем к сотрудничеству дилеров!
-            </h4>
-            <div class="contacts__address">
-              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-            </div>
+      <div class="contacts__container container">
+        <div class="contacts__caption">
+          <h4 class="contacts__title">
+            приглашаем к сотрудничеству дилеров!
+          </h4>
+          <div class="contacts__address">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
           </div>
         </div>
+      </div>
+      <div class="contacts__map">
+
       </div>
     </section>
   </main>

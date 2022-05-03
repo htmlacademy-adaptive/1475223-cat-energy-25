@@ -4,9 +4,32 @@
   }
 }
 
+.contacts__container {
+  position: relative;
+  background-color: $white;
+
+  @include desktop {
+    background-color: transparent;
+  }
+}
+
+.contacts__map {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/map-2.png");
+  height: 360px;
+  background-color: $white;
+
+  @include tablet {
+    height: 400px;
+  }
+}
+
 .contacts__caption {
   display: flex;
   padding: 26px 0;
+  background-color: $white;
 
   @include tablet {
     padding: 56px 50px;
@@ -15,7 +38,10 @@
   }
 
   @include desktop {
+    position: absolute;
+    top: 100px;
     width: 50%;
+
     padding: 56px 80px;
   }
 }
@@ -37,6 +63,7 @@
   flex: 0 0 50%;
 
   @include tablet {
+    font-size: 16px;
     flex-basis: 35%;
   }
 }
