@@ -45,7 +45,8 @@
 
   @include desktop {
     margin-right: 80px;
-    border: none;
+    border-right: none;
+    border-left: none;
   }
 }
 

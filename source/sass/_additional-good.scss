@@ -34,8 +34,11 @@
   @include regular(14px);
   display: flex;
   flex-wrap: nowrap;
-  justify-self: center;
   white-space: nowrap;
+
+  @include desktop {
+    justify-self: center;
+  }
 }
 
 .additional-good__label,
