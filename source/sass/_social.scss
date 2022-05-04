@@ -5,6 +5,10 @@
 }
 
 .social__item {
+  a:focus {
+    outline: none;
+  }
+
   &:not(:last-of-type) a {
     margin-right: 24px;
   }

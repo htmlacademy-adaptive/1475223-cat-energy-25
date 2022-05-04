@@ -36,6 +36,10 @@
 
   .card__title {
     margin-bottom: 10px;
+
+    @include tablet {
+      margin-bottom: 20px;
+    }
   }
 
   @include tablet {
@@ -157,7 +161,7 @@
     }
 
     @include desktop {
-      max-width: 172px;
+      max-width: 148px;
     }
   }
 }

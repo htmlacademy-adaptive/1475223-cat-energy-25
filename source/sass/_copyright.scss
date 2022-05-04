@@ -2,3 +2,9 @@
   @include regular(16px);
   margin-right: 15px;
 }
+
+.copyright__logo {
+  &:focus {
+    outline: none;
+  }
+}

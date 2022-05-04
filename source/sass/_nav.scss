@@ -9,6 +9,12 @@
   border: none;
   background-color: transparent;
 
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
+
   @include tablet {
     display: none;
   }

@@ -22,6 +22,10 @@
     justify-content: center;
     border-bottom: 1px solid $border-color;
 
+    &:focus {
+      outline: none;
+    }
+
     @include tablet {
       border-bottom: none;
     }
