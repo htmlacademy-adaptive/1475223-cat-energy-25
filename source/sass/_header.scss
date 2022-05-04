@@ -36,22 +36,4 @@
   &:focus {
     outline: none;
   }
-
-  @include tablet {
-    margin-right: 15px;
-  }
-}
-
-.header__logo-text {
-  font-size: 0;
-
-  &:focus {
-    outline: none;
-  }
-
-  img {
-    @include tablet {
-      height: 18px;
-    }
-  }
 }
