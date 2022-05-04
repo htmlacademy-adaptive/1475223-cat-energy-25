@@ -10,7 +10,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header">
+  <header class="header js-header">
     <div class="header__container container">
       <a href="index.html" class="header__logo header__logo--sm">
         <img src="img/logo-mobile.svg" alt="Функциональное питание для котов «CAT ENERGY»">
@@ -22,14 +22,13 @@
         <img src="img/footer-logo.svg" alt="Функциональное питание для котов «CAT ENERGY»">
       </a>
       <nav class="nav">
-        <button class="nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-          <svg width="24" height="18">
-            <use xlink:href="img/sprite.svg#hamburger"></use>
-          </svg>
+        <button class="nav__toggle hamburger js-menu-toggle" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
         <div class="nav__inner">
-          <ul class="nav__list site-list">
+          <ul class="nav__list site-list js-menu">
             <li class="site-list__item">
               <a href="index.html">
                 Главная
@@ -61,7 +60,7 @@
               <img src="img/catalog-1-desktop.png" alt="Cat Energy PRO 500 г">
             </div>
             <div class="card__inner">
-              <h5 class="card__title">Cat Energy PRO 500 г</h5>
+              <h5 class="card__title">Cat Energy PRO <br> 500 г</h5>
               <div class="card__properties">
                 <div class="card__properties-row">
                   <div class="card__properties-label">Масса</div>
@@ -87,7 +86,7 @@
               <img src="img/catalog-2-desktop.png" alt="Cat Energy PRO 1000 г">
             </div>
             <div class="card__inner">
-              <h5 class="card__title">Cat Energy PRO 1000 г</h5>
+              <h5 class="card__title">Cat Energy PRO <br> 1000 г</h5>
               <div class="card__properties">
                 <div class="card__properties-row">
                   <div class="card__properties-label">Масса</div>
@@ -114,7 +113,7 @@
               <img src="img/catalog-3-desktop.png" alt="Cat Energy SLIM 500 г">
             </div>
             <div class="card__inner">
-              <h5 class="card__title">Cat Energy PRO 1000 г</h5>
+              <h5 class="card__title">Cat Energy PRO <br> 1000 г</h5>
               <div class="card__properties">
                 <div class="card__properties-row">
                   <div class="card__properties-label">Масса</div>
@@ -140,7 +139,7 @@
               <img src="img/catalog-4-desktop.png" alt="Cat Energy SLIM 1000 г">
             </div>
             <div class="card__inner">
-              <h5 class="card__title">Cat Energy PRO 1000 г</h5>
+              <h5 class="card__title">Cat Energy PRO <br> 1000 г</h5>
               <div class="card__properties">
                 <div class="card__properties-row">
                   <div class="card__properties-label">Масса</div>
@@ -168,7 +167,7 @@
               <img src="img/catalog-5-desktop.png" alt="Cat Energy SLIM 500 г">
             </div>
             <div class="card__inner">
-              <h5 class="card__title">Cat Energy SLIM 500 г</h5>
+              <h5 class="card__title">Cat Energy SLIM <br> 500 г</h5>
               <div class="card__properties">
                 <div class="card__properties-row">
                   <div class="card__properties-label">Масса</div>
@@ -196,7 +195,7 @@
               <img src="img/catalog-6-desktop.png" alt="Cat Energy SLIM 1000 г">
             </div>
             <div class="card__inner">
-              <h5 class="card__title">Cat Energy SLIM 1000 г</h5>
+              <h5 class="card__title">Cat Energy SLIM <br> 1000 г</h5>
               <div class="card__properties">
                 <div class="card__properties-row">
                   <div class="card__properties-label">Масса</div>
@@ -224,7 +223,7 @@
               <img src="img/catalog-7-desktop.png" alt="Cat Energy SLIM 500 г">
             </div>
             <div class="card__inner">
-              <h5 class="card__title">Cat Energy SLIM 500 г</h5>
+              <h5 class="card__title">Cat Energy SLIM <br> 500 г</h5>
               <div class="card__properties">
                 <div class="card__properties-row">
                   <div class="card__properties-label">Масса</div>
@@ -335,19 +334,17 @@
 
     <section class="contacts contacts--dark">
       <h2 class="visually-hidden">Контакты</h2>
-      <div class="contacts__inner">
-        <div class="contacts__container contacts__container--dark container">
-          <div class="contacts__caption contacts__caption--dark">
-            <h4 class="contacts__title">
-              приглашаем к сотрудничеству дилеров!
-            </h4>
-            <div class="contacts__address">
-              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-            </div>
+      <div class="contacts__container container">
+        <div class="contacts__caption">
+          <h4 class="contacts__title">
+            приглашаем к сотрудничеству дилеров!
+          </h4>
+          <div class="contacts__address">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
           </div>
         </div>
-        <div class="contacts__map"></div>
       </div>
+      <div class="contacts__map"></div>
     </section>
   </main>
 
@@ -387,6 +384,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/app.js" type="text/javascript"></script>
 </body>
 
 </html>

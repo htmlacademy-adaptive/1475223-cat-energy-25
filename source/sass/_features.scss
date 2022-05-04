@@ -1,7 +1,7 @@
 .features {
   padding-top: 0;
 
-  @include tablet {
+  @include desktop {
     padding-top: 80px;
   }
 }

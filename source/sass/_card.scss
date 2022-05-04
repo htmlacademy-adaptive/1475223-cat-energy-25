@@ -74,25 +74,6 @@
     bottom: 0;
   }
 
-  .card__img {
-    padding: 10px 30px;
-    flex: 1 0 50%;
-    margin-bottom: 15px;
-
-    img {
-      width: 100%;
-      height: auto;
-    }
-
-    @include tablet {
-      padding: 0 30px;
-    }
-
-    @include desktop {
-      padding: 0;
-    }
-  }
-
   &:last-of-type::after {
     content: "";
 
@@ -127,6 +108,14 @@
   margin-top: 0;
   margin-bottom: 20px;
 
+  br {
+    display: none;
+
+    @include desktop {
+      display: block;
+    }
+  }
+
   @include tablet {
     text-align: center;
     font-size: 20px;
@@ -151,6 +140,26 @@
 .card__properties-value {
   text-align: right;
   flex: 0 0 50%;
+}
+
+.card__img {
+  display: flex;
+  justify-content: center;
+  flex: 1 0 50%;
+  margin-bottom: 15px;
+
+  img {
+    max-width: 84px;
+    height: auto;
+
+    @include tablet {
+      max-width: 168px;
+    }
+
+    @include desktop {
+      max-width: 172px;
+    }
+  }
 }
 
 .card__description {
