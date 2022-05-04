@@ -3,8 +3,14 @@
   background-color: $bg;
   border-color: $border;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $hover-bg;
     border-color: $hover-border;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 3px rgba($primary, 0.3);
+    outline: none;
   }
 }

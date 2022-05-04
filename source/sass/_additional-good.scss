@@ -36,6 +36,10 @@
   flex-wrap: nowrap;
   white-space: nowrap;
 
+  @include tablet {
+    font-size: 16px;
+  }
+
   @include desktop {
     justify-self: center;
   }

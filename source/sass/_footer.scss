@@ -5,6 +5,7 @@
 .footer__container {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .footer__logo,
@@ -23,6 +24,10 @@
 .footer__logo {
   text-align: center;
   border-bottom: 1px solid $border-color;
+
+  &:focus {
+    outline: none;
+  }
 
   @include tablet {
     text-align: left;
