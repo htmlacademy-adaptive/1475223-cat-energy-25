@@ -10,7 +10,8 @@
   background-color: transparent;
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     outline: none;
   }
 
