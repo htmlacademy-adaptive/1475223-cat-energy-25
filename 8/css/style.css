@@ -256,23 +256,6 @@ a {
 .header__logo:hover, .header__logo:focus {
   outline: none;
 }
-@media (min-width: 768px) {
-  .header__logo {
-    margin-right: 15px;
-  }
-}
-
-.header__logo-text {
-  font-size: 0;
-}
-.header__logo-text:focus {
-  outline: none;
-}
-@media (min-width: 768px) {
-  .header__logo-text img {
-    height: 18px;
-  }
-}
 
 .container {
   margin: 0 auto;
