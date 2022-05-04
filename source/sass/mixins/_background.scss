@@ -1,6 +1,9 @@
-@mixin background($overlay, $url) {
-  background: linear-gradient(0deg, rgba($overlay, 0.86), rgba($overlay, 0.86)), url($url);
+@mixin reset-background() {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@mixin background($overlay, $url) {
+  background-image: linear-gradient(0deg, rgba($overlay, 0.86), rgba($overlay, 0.86)), url($url);
 }

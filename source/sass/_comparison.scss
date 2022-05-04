@@ -201,16 +201,6 @@
   align-items: flex-end;
   clip-path: inset(0 0 0 var(--slider-value, 50%));
 
-  img {
-    display: block;
-    max-width: 280px;
-    height: auto;
-
-    @include tablet {
-      max-width: 592px;
-    }
-  }
-
   &:first-of-type {
     clip-path: inset(0 calc(100% - var(--slider-value, 50%)) 0 0);
   }
