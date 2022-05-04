@@ -37,28 +37,8 @@
     outline: none;
   }
 
-  &--sm {
-    img {
-      width: auto;
-      height: 38px;
-    }
-
-    @include tablet {
-      display: none;
-    }
-  }
-
-  &--big {
-    display: none;
+  @include tablet {
     margin-right: 15px;
-
-    img {
-      height: 49px;
-    }
-
-    @include tablet {
-      display: block;
-    }
   }
 }
 
