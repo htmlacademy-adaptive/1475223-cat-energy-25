@@ -1,19 +1,34 @@
 .promo {
-  @include background($primary, "../img/promo.jpg");
+  @include reset-background();
+  @include background($primary, "../img/promo-mobile@1x.jpg");
   padding: 60px;
   display: grid;
   justify-items: center;
   row-gap: 50px;
 
+  @media (min-resolution: 2dppx) {
+    @include background($primary, "../img/promo-mobile@2x.jpg");
+  }
+
   @include tablet {
+    @include background($primary, "../img/promo-tablet@1x.jpg");
     padding: 60px 100px;
     grid-template-columns: repeat(2, 1fr);
+
+    @media (min-resolution: 2dppx) {
+      @include background($primary, "../img/promo-tablet@2x.jpg");
+    }
   }
 
   @include desktop {
+    @include background($primary, "../img/promo-mobile@1x.jpg");
     grid-template-columns: 1fr;
     row-gap: 40px;
     padding: 40px;
+
+    @media (min-resolution: 2dppx) {
+      @include background($primary, "../img/promo-mobile@2x.jpg");
+    }
   }
 }
 

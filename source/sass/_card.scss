@@ -153,13 +153,6 @@
   margin-bottom: 15px;
 
   img {
-    max-width: 84px;
-    height: auto;
-
-    @include tablet {
-      max-width: 168px;
-    }
-
     @include desktop {
       max-width: 148px;
     }

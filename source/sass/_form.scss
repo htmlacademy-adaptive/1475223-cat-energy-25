@@ -17,9 +17,16 @@
   position: relative;
   padding-top: 30px;
 
+  &--lead {
+    padding-bottom: 30px;
+
+    @include tablet {
+      padding-bottom: 0;
+    }
+  }
+
   @include tablet {
     padding-top: 70px;
-    /* padding-bottom: 70px; */
   }
 }
 

@@ -6,6 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Функциональное питание для котов «CAT ENERGY»</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -55,7 +62,15 @@
           <h2 class="hero__title">Функциональное питание для котов</h2>
           <p class="hero__subtitle">Занялся собой? Займись котом!</p>
         </div>
-        <img class="hero__image" src="img/hero.png" alt="Функциональное питание для котов «CAT ENERGY»">
+        <div class="hero__image">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/can-desktop@1x.png 1x, img/can-desktop@2x.png 2x"
+              width="552">
+            <source media="(min-width: 768px)" srcset="img/can-tablet@1x.png 1x, img/can-tablet@2x.png 2x" width="600">
+            <img src="img/can-mobile@1x.png" srcset="img/can-mobile@2x.png 2x"
+              alt="Функциональное питание для котов «CAT ENERGY»">
+          </picture>
+        </div>
         <a class="hero__button button button--primary" href="form.html">Подобрать программу</a>
       </div>
     </section>
@@ -178,10 +193,16 @@
         </div>
         <div class="comparison__slider js-slider">
           <div class="comparison__slider-item">
-            <img src="img/cat-fat-tablet-1x.png" alt="Cat before">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-fat-tablet@1x.png 1x, img/cat-fat-tablet@2x.png 2x">
+              <img src="img/cat-fat-mobile@1x.png" srcset="img/cat-fat-mobile@2x.png 2x" alt="Fat cat">
+            </picture>
           </div>
           <div class="comparison__slider-item">
-            <img src="img/cat-skinny-tablet-1x.png" alt="Cat after">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-fit-tablet@1x.png 1x, img/cat-fit-tablet@2x.png 2x">
+              <img src="img/cat-fit-mobile@1x.png" srcset="img/cat-fit-mobile@2x.png 2x" alt="Skinny cat">
+            </picture>
           </div>
           <div class="comparison__slider-controls">
             <div class="comparison__slider-before">БЫЛО</div>
