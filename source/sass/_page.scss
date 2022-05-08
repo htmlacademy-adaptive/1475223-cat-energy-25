@@ -8,6 +8,17 @@
     @include desktop {
       color: $white;
     }
+
+    &:hover {
+      color: rgba($white, 0.6);
+      border-color: rgba($white, 0.6);
+    }
+
+    &:focus,
+    &:active {
+      color: rgba($white, 0.3);
+      border-color: rgba($white, 0.3);
+    }
   }
 
   .site-list__item--active a {

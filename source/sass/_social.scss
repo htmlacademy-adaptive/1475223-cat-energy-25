@@ -5,8 +5,17 @@
 }
 
 .social__item {
-  a:focus {
-    outline: none;
+  a {
+    &:hover {
+      color: $primary;
+    }
+
+    &:active,
+    &:focus {
+      color: $primary;
+      opacity: 0.2;
+      outline: none;
+    }
   }
 
   &:not(:last-of-type) a {

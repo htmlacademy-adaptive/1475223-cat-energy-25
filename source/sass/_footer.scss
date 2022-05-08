@@ -25,7 +25,13 @@
   text-align: center;
   border-bottom: 1px solid $border-color;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active,
   &:focus {
+    opacity: 0.6;
     outline: none;
   }
 
@@ -36,14 +42,4 @@
 
 .footer__social {
   border-bottom: 1px solid $border-color;
-}
-
-.footer__copyright {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  @include tablet {
-    justify-content: flex-end;
-  }
 }

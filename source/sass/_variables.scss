@@ -4,11 +4,15 @@ $light-gray: #e6e6e6;
 $dark-gray: #444444;
 $soft-gray: #898787;
 $special-gray: #cdcdcd;
+$special-dark-gray: #e7e7e7;
 $black: #000000;
-$green: #68b738;
+$green1: #68b738;
+$green2: #5eaa2f;
+$red: #ff8282;
 
-$primary: $green;
+$primary: $green1;
 $secondary: $gray;
+$danger: $red;
 
 $body-color: $dark-gray;
 $border-color: $light-gray;
@@ -27,7 +31,10 @@ $headings-color: $black;
 $headings-font-weight: 400;
 $headings-line-height: 1;
 
-$input-border: $special-gray;
+$input-border: $special-dark-gray;
+$input-border-focus: $dark-gray;
+$input-border-hover: $special-gray;
+$input-border-invalid: $danger;
 $input-placeholder-color: $dark-gray;
 
 $tablet-width: 768px;
@@ -37,3 +44,13 @@ $mobile-width-only: 767px;
 $slider-thumb-bg: $white;
 $slider-thumb-r: 34px;
 $slider-track-h: 6px;
+
+$primary-button-hover-bg: $green2;
+$primary-button-hover-border: $green2;
+$primary-button-focus-bg: $green2;
+$primary-button-focus-border: $green2;
+
+$secondary-button-hover-bg: $light-gray;
+$secondary-button-hover-border: $light-gray;
+$secondary-button-focus-bg: $light-gray;
+$secondary-button-focus-border: $light-gray;
