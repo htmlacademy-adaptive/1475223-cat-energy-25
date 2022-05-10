@@ -6,17 +6,24 @@ function changeSliderValue() {
 }
 
 const header = document.querySelector('.js-header');
-document.addEventListener('click', function (_e) {
-  header.classList.remove('header--menu-opened');
-  toggle.classList.remove('hamburger--close');
-});
-
 const toggle = document.querySelector('.js-menu-toggle');
+
+function handleDocumentClick(_e) {
+  header && header.classList.remove('header--menu-opened');
+  toggle && toggle.classList.remove('hamburger--close');
+}
+
+handleDocumentClick();
+document.addEventListener('click', handleDocumentClick);
+
+function handleToggleClick(e) {
+  e.preventDefault();
+  e.stopPropagation();
+
+  header && header.classList.toggle('header--menu-opened');
+  toggle && toggle.classList.toggle('hamburger--close');
+}
+
 if (toggle) {
-  toggle.addEventListener('click', function (e) {
-    e.preventDefault();
-    e.stopPropagation();
-    header.classList.toggle('header--menu-opened');
-    toggle.classList.toggle('hamburger--close');
-  });
+  toggle.addEventListener('click', handleToggleClick);
 }

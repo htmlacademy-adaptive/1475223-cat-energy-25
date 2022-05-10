@@ -6,6 +6,7 @@ import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
+import sourcemaps from 'gulp-sourcemaps';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
@@ -32,6 +33,7 @@ export const styles = () => {
 
 const html = () => {
   return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: false }))
     .pipe(gulp.dest('build'));
 }
 
@@ -39,6 +41,9 @@ const html = () => {
 
 const scripts = () => {
   return gulp.src('source/js/app.js')
+    .pipe(sourcemaps.init())
+    .pipe(terser())
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
 }
@@ -61,7 +66,9 @@ const copyImages = () => {
 const createWebp = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
     .pipe(squoosh({
-      webp: {}
+      webp: {
+        quality: 100
+      }
     }))
     .pipe(gulp.dest('build/img'))
 }
@@ -126,7 +133,7 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch('source/sass/**/.scss', gulp.series(styles));
+  gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/app.js', gulp.series(scripts));
   gulp.watch('source/*.html', gulp.series(html, reload));
 }

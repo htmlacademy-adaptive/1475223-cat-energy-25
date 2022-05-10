@@ -115,10 +115,11 @@
 .form__input {
   width: 100%;
   padding: 14px 16px;
-  border: 1px solid $input-border;
+  box-shadow: 0 0 0 1px $input-border;
+  border: none;
 
   &:invalid {
-    border: 2px solid $input-border-invalid;
+    box-shadow: 0 0 0 2px $input-border-invalid;
 
     & + .form__icon {
       color: $input-border-invalid;
@@ -126,11 +127,11 @@
   }
 
   &:hover {
-    border-color: $input-border-hover;
+    box-shadow: 0 0 0 1px $input-border-hover;
   }
 
   &:focus {
-    border: 2px solid $input-border-focus;
+    box-shadow: 0 0 0 2px $input-border-focus;
     outline: none;
 
     & + .form__icon {
