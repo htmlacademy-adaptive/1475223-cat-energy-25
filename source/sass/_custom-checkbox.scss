@@ -3,6 +3,10 @@
   display: flex;
   align-items: center;
 
+  &:hover::before {
+    border-color: $input-border-hover;
+  }
+
   &::before {
     content: "";
     display: inline-block;

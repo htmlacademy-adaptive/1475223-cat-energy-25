@@ -22,7 +22,15 @@
     justify-content: center;
     border-bottom: 1px solid $border-color;
 
-    &:focus {
+    &:hover {
+      color: rgba($headings-color, 0.6);
+      border-color: rgba($primary, 0.6);
+    }
+
+    &:focus,
+    a:active {
+      color: rgba($headings-color, 0.3);
+      border-color: rgba($primary, 0.3);
       outline: none;
     }
 

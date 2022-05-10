@@ -126,6 +126,18 @@
   border-top: 1px solid $border-color;
   font-size: 16px;
   text-transform: uppercase;
+  transform: scale(1);
+
+  &:hover {
+    .features__icon-next {
+      transform: scale(1.2);
+    }
+  }
+
+  &:active {
+    color: rgba($headings-color, 0.3);
+    transform: scale(1);
+  }
 
   @include tablet {
     border-top: none;

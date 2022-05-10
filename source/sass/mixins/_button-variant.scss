@@ -1,17 +1,29 @@
-@mixin button-variant($color, $bg, $border, $hover-bg: darken($bg, 10%), $hover-border: darken($border, 10%)) {
+@mixin button-variant(
+  $color,
+  $bg,
+  $border,
+  $hover-bg: darken($bg, 10%),
+  $hover-border: darken($border, 10%),
+  $focus-bg: darken($bg, 10%),
+  $focus-border: darken($bg, 10%)
+) {
   color: $color;
   background-color: $bg;
   border-color: $border;
 
-  &:hover,
-  &:focus,
-  &:active {
+  &:hover {
     outline: none;
     background-color: $hover-bg;
     border-color: $hover-border;
   }
 
   &:focus {
-    box-shadow: 0 0 0 3px rgba($hover-bg, 0.3);
+    outline: none;
+    background-color: $focus-bg;
+    border-color: $focus-border;
+  }
+
+  &:active {
+    color: rgba($color, 0.3);
   }
 }
