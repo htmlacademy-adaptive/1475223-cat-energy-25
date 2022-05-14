@@ -8,28 +8,28 @@
   text-transform: uppercase;
   text-align: center;
   transition: background-color 0.2s ease, border-color 0.2s ease;
+}
 
-  &--primary {
-    @include button-variant(
-      $white,
-      $primary,
-      $primary,
-      $primary-button-hover-bg,
-      $primary-button-hover-border,
-      $primary-button-focus-bg,
-      $primary-button-focus-border
-    );
-  }
+.button--primary {
+  @include button-variant(
+    $white,
+    $primary,
+    $primary,
+    $primary-button-hover-bg,
+    $primary-button-hover-border,
+    $primary-button-focus-bg,
+    $primary-button-focus-border
+  );
+}
 
-  &--secondary {
-    @include button-variant(
-      $body-color,
-      $secondary,
-      $secondary,
-      $secondary-button-hover-bg,
-      $secondary-button-hover-border,
-      $secondary-button-hover-bg,
-      $secondary-button-hover-border
-    );
-  }
+.button--secondary {
+  @include button-variant(
+    $body-color,
+    $secondary,
+    $secondary,
+    $secondary-button-hover-bg,
+    $secondary-button-hover-border,
+    $secondary-button-hover-bg,
+    $secondary-button-hover-border
+  );
 }

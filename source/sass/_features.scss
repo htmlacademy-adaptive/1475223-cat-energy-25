@@ -28,36 +28,6 @@
 .features__icon {
   margin-right: 15px;
 
-  &--slim {
-    width: 50px;
-    height: 53px;
-
-    @include tablet {
-      width: 200px;
-      height: 211px;
-    }
-
-    @include desktop {
-      width: 100px;
-      height: 106px;
-    }
-  }
-
-  &--gain {
-    width: 67px;
-    height: 50px;
-
-    @include tablet {
-      width: 268px;
-      height: 200px;
-    }
-
-    @include desktop {
-      width: 134px;
-      height: 100px;
-    }
-  }
-
   @include tablet {
     grid-row: 1 / -1;
     grid-column: 2 / -1;
@@ -68,6 +38,36 @@
     justify-self: start;
     grid-row: 1 / 2;
     grid-column: 1 / 2;
+  }
+}
+
+.features__icon--slim {
+  width: 50px;
+  height: 53px;
+
+  @include tablet {
+    width: 200px;
+    height: 211px;
+  }
+
+  @include desktop {
+    width: 100px;
+    height: 106px;
+  }
+}
+
+.features__icon--gain {
+  width: 67px;
+  height: 50px;
+
+  @include tablet {
+    width: 268px;
+    height: 200px;
+  }
+
+  @include desktop {
+    width: 134px;
+    height: 100px;
   }
 }
 

@@ -19,6 +19,30 @@
   }
 }
 
+.header--menu-static {
+  .nav__list {
+    position: static;
+  }
+
+  .nav {
+    margin-top: 20px;
+    flex: 0 0 100%;
+
+    @include tablet {
+      margin-top: none;
+      flex-basis: auto;
+    }
+  }
+
+  .header__container {
+    flex-wrap: wrap;
+
+    @include tablet {
+      flex-wrap: nowrap;
+    }
+  }
+}
+
 .header__container {
   display: flex;
   align-items: center;

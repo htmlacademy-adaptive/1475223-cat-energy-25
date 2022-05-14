@@ -1,39 +1,39 @@
 .section-title {
   @include heading(36px);
   margin-top: 0;
+}
 
-  &--normal {
-    @include tablet {
-      font-size: 60px;
-      margin-bottom: 30px;
-    }
+.section-title--normal {
+  @include tablet {
+    font-size: 60px;
+    margin-bottom: 30px;
+  }
+}
+
+.section-title--crossed {
+  @include heading(24px);
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 35px;
+
+  span {
+    display: inline-block;
+    margin-left: -20px;
+    padding: 0 20px;
+    background-color: $white;
   }
 
-  &--crossed {
-    @include heading(24px);
-    position: relative;
-    margin-top: 0;
-    margin-bottom: 35px;
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 14px;
+    left: -9999px;
+    right: -9999px;
+    border-top: 2px solid $primary;
+  }
 
-    span {
-      display: inline-block;
-      margin-left: -20px;
-      padding: 0 20px;
-      background-color: $white;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: 14px;
-      left: -9999px;
-      right: -9999px;
-      border-top: 2px solid $primary;
-    }
-
-    @include tablet {
-      font-size: 36px;
-    }
+  @include tablet {
+    font-size: 36px;
   }
 }
