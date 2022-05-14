@@ -1,3 +1,5 @@
+'use strict';
+
 const slider = document.querySelector('.js-slider');
 const sliderRange = document.querySelector('.js-slider__range');
 
@@ -10,6 +12,7 @@ const toggle = document.querySelector('.js-menu-toggle');
 
 function handleDocumentClick(_e) {
   header && header.classList.remove('header--menu-opened');
+  header && header.classList.remove('header--menu-static');
   toggle && toggle.classList.remove('hamburger--close');
 }
 
