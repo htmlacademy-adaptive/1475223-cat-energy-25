@@ -1,11 +1,12 @@
 .section-title {
-  @include heading(36px);
+  @include heading(36px, 40px);
   margin-top: 0;
 }
 
 .section-title--normal {
   @include tablet {
     font-size: 60px;
+    line-height: 60px;
     margin-bottom: 30px;
   }
 }

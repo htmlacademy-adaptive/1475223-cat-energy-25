@@ -25,12 +25,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("../img/map-2.png");
+  background-image: url("../img/location-mobile.jpg");
   height: 360px;
   background-color: $white;
 
   @include tablet {
+    background-image: url("../img/location-tablet.jpg");
     height: 400px;
+  }
+
+  @include desktop {
+    background-image: url("../img/location-desktop.jpg");
   }
 }
 
@@ -40,17 +45,17 @@
   background-color: $white;
 
   @include tablet {
-    padding: 56px 50px;
+    padding: 56px 40px 63px;
     justify-content: space-between;
     align-items: stretch;
   }
 
   @include desktop {
+    width: 565px;
     position: absolute;
-    top: 100px;
-    width: 50%;
-
-    padding: 56px 80px;
+    display: flex;
+    top: 95px;
+    padding: 56px 80px 63px;
   }
 }
 
@@ -60,18 +65,43 @@
   flex: 0 0 50%;
   text-transform: uppercase;
 
+  br {
+    @include desktop {
+      /* display: none; */
+    }
+  }
+
   @include tablet {
     font-size: 20px;
-    flex-basis: 20%;
+    line-height: 26px;
+    transform: translateY(4px);
+    flex-basis: 26%;
+  }
+
+  @include desktop {
+    flex-basis: 40%;
   }
 }
 
 .contacts__address {
-  @include regular();
+  @include regular(14px, 20px);
   flex: 0 0 50%;
 
+  span {
+    @include tablet {
+      margin-top: 20px;
+      display: block;
+    }
+  }
+
   @include tablet {
+    text-align: right;
     font-size: 16px;
-    flex-basis: 35%;
+    flex-basis: 31%;
+  }
+
+  @include desktop {
+    text-align: left;
+    flex-basis: 39%;
   }
 }

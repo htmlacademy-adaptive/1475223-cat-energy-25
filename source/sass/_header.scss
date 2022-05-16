@@ -1,15 +1,16 @@
 .header {
   position: relative;
-  padding: 10px 0;
-  border-bottom: 1px solid $border-color;
+  padding-top: 10px;
+  padding-bottom: 17px;
 
   @include tablet {
-    padding: 25px 0;
+    padding-top: 24px;
     border-bottom: none;
   }
 
   @include desktop {
-    padding: 50px 0;
+    padding-top: 53px;
+    padding-bottom: 29px;
   }
 }
 

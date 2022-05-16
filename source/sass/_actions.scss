@@ -13,8 +13,8 @@
   }
 
   @include tablet {
-    padding-top: 40px;
-    padding-bottom: 100px;
+    padding-top: 45px;
+    padding-bottom: 64px;
 
     &::before {
       content: "";
@@ -22,7 +22,8 @@
   }
 
   @include desktop {
-    padding: 60px 0;
+    padding-top: 71px;
+    padding-bottom: 69px;
 
     &::before {
       content: none;
@@ -32,17 +33,21 @@
 
 .actions__title {
   margin-bottom: 40px;
+
+  @include tablet {
+    margin-bottom: 32px;
+  }
 }
 
 .actions__list {
   @include reset-list();
   display: grid;
-  row-gap: 15px;
+  row-gap: 20px;
 
   @include tablet {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 180px;
-    row-gap: 90px;
+    column-gap: 60px;
+    row-gap: 54px;
   }
 
   @include desktop {
@@ -54,6 +59,62 @@
 .actions__item {
   position: relative;
   display: flex;
+
+  &:nth-of-type(1) {
+    &::before {
+      @include tablet {
+        right: 100px;
+      }
+
+      @include desktop {
+        right: 20px;
+      }
+    }
+  }
+
+  &:nth-of-type(2) {
+    &::before {
+      @include tablet {
+        right: 80px;
+      }
+
+      @include desktop {
+        right: 0;
+      }
+    }
+  }
+
+  &:nth-of-type(3) {
+    &::before {
+      @include tablet {
+        right: 80px;
+      }
+
+      @include desktop {
+        right: 0;
+      }
+    }
+  }
+
+  &:nth-of-type(4) {
+    br {
+      display: none;
+
+      @include tablet {
+        display: block;
+      }
+    }
+
+    &::before {
+      @include tablet {
+        right: 75px;
+      }
+
+      @include desktop {
+        right: 0;
+      }
+    }
+  }
 
   &::before {
     @include heading(280px);
@@ -73,6 +134,10 @@
     flex-wrap: wrap;
     padding: 40px 0;
   }
+
+  @include desktop {
+    padding-bottom: 57px;
+  }
 }
 
 .actions__icon {
@@ -80,20 +145,40 @@
   align-items: center;
   justify-content: center;
   background-color: $primary;
-  flex: 0 0 60px;
   margin-right: 20px;
+  flex: 0 0 60px;
   width: 60px;
   height: 60px;
+
+  @include tablet {
+    flex: 0 0 80px;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.actions__icon--tub svg {
+  transform: translateY(-2px);
+}
+
+.actions__icon--eat svg {
+  transform: translateX(1px);
 }
 
 .actions__description {
-  @include regular();
-  margin: 0;
+  @include regular(14px, 18px);
+  margin: 2px 0 0 0;
   flex: 1 1 auto;
 
   @include tablet {
+    padding-right: 60px;
     font-size: 16px;
-    margin-top: 30px;
+    line-height: 24px;
+    margin-top: 31px;
     flex-basis: 100%;
+  }
+
+  @include desktop {
+    padding-right: 0;
   }
 }
