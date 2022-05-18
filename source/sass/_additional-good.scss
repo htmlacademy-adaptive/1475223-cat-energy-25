@@ -1,9 +1,11 @@
 .additional-good {
-  padding: 20px 0;
+  padding-top: 13px;
+  padding-bottom: 18px;
+  border-top: 1px solid $border-color;
   display: grid;
-  row-gap: 15px;
+  row-gap: 13px;
 
-  &:not(:last-of-type) {
+  &:last-of-type {
     border-bottom: 1px solid $border-color;
   }
 
@@ -55,6 +57,7 @@
 }
 
 .additional-good__button {
+  margin-top: -2px;
   @include tablet {
     grid-column: 1 / -1;
   }

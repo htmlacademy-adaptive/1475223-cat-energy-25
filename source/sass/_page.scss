@@ -4,6 +4,10 @@
 }
 
 .page--home {
+  .header {
+    border-bottom: none;
+  }
+
   .site-list__item a {
     @include desktop {
       color: $white;

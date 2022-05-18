@@ -27,6 +27,7 @@
     <div class="header__container container">
       <a href="index.html" class="header__logo">
         <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img src="img/logo-mobile.svg" alt="Функциональное питание для котов «CAT ENERGY»">
         </picture>
@@ -39,12 +40,12 @@
         </button>
         <div class="nav__inner">
           <ul class="nav__list site-list js-menu">
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--active">
               <a href="index.html">
                 Главная
               </a>
             </li>
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item">
               <a href="catalog.html">
                 Каталог продукции
               </a>
@@ -308,7 +309,7 @@
         </div>
 
         <div class="catalog__list">
-          <h3 class="catalog__title section-title section-title--crossed">
+          <h3 class="catalog__list-title section-title section-title--crossed">
             <span>
               Дополнительные товары
             </span>
@@ -332,8 +333,8 @@
                   Питьевая вода
                 </h5>
                 <div class="additional-good__properties">
-                  <div class="additional-good__label">1 упаковка (100 г)</div>
-                  <div class="additional-good__value">200 Р.</div>
+                  <div class="additional-good__label">5 литров</div>
+                  <div class="additional-good__value">50 Р.</div>
                 </div>
                 <button class="additional-good__button button button--primary" type="button">
                   заказать
@@ -344,7 +345,7 @@
                   Молоко
                 </h5>
                 <div class="additional-good__properties">
-                  <div class="additional-good__label">1 упаковка (100 г)</div>
+                  <div class="additional-good__label">1 литр</div>
                   <div class="additional-good__value">200 Р.</div>
                 </div>
                 <button class="additional-good__button button button--primary" type="button">
@@ -356,7 +357,7 @@
                   Витамины
                 </h5>
                 <div class="additional-good__properties">
-                  <div class="additional-good__label">1 упаковка (100 г)</div>
+                  <div class="additional-good__label">1 упаковка (30 г)</div>
                   <div class="additional-good__value">200 Р.</div>
                 </div>
                 <button class="additional-good__button button button--primary" type="button">
@@ -382,10 +383,10 @@
       <div class="contacts__container container">
         <div class="contacts__caption">
           <h4 class="contacts__title">
-            приглашаем к сотрудничеству дилеров!
+            приглашаем <br> к сотрудничеству дилеров!
           </h4>
           <div class="contacts__address">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
           </div>
         </div>
       </div>
