@@ -10,14 +10,15 @@
   }
 
   @include tablet {
-    padding: 25px 40px;
+    row-gap: 25px;
+    padding: 26px 38px 28px 38px;
     grid-template-columns: 2fr 1fr;
   }
 
   @include desktop {
     align-items: center;
-    padding: 25px 0;
-    column-gap: 20px;
+    padding: 15px 0 17px 0;
+    column-gap: 0;
     grid-template-columns: 1fr 2fr 1fr;
   }
 }
@@ -39,30 +40,57 @@
   white-space: nowrap;
 
   @include tablet {
+    line-height: 20px;
     font-size: 16px;
-  }
-
-  @include desktop {
-    justify-self: center;
+    justify-content: flex-end;
   }
 }
 
 .additional-good__label,
 .additional-good__value {
   flex: 0 0 50%;
+
+  @include tablet {
+    flex-basis: auto;
+  }
 }
 
 .additional-good__value {
   text-align: right;
+
+  @include tablet {
+    margin-left: 49px;
+  }
+
+  @include desktop {
+    text-align: left;
+    flex-basis: 85px;
+    /* margin-right: 19px; */
+  }
+}
+
+.additional-good__label {
+  @include tablet {
+    text-align: left;
+  }
+
+  @include desktop {
+    margin-left: 108px;
+    flex-grow: 1;
+  }
 }
 
 .additional-good__button {
   margin-top: -2px;
+
   @include tablet {
     grid-column: 1 / -1;
   }
 
   @include desktop {
+    margin-top: 0;
+    padding: 7px 92px;
+    line-height: 26px;
     grid-column: 3 / -1;
   }
 }

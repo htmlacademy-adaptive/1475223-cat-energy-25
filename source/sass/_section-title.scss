@@ -22,6 +22,17 @@
     margin-left: -20px;
     padding: 0 20px;
     background-color: $white;
+
+    @include tablet {
+      margin-left: 0;
+      padding-left: 37px;
+      padding-right: 37px;
+    }
+
+    @include desktop {
+      margin-left: -40px;
+      padding-left: 40px;
+    }
   }
 
   &::before {
@@ -32,6 +43,10 @@
     left: -9999px;
     right: -9999px;
     border-top: 2px solid $primary;
+
+    @include tablet {
+      top: 23px;
+    }
   }
 
   @include tablet {

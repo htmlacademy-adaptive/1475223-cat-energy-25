@@ -3,11 +3,11 @@
 
   @include tablet {
     padding-top: 48px;
-    padding-bottom: 70px;
+    padding-bottom: 41px;
   }
 
   @include desktop {
-    padding-top: 0;
+    padding-top: 47px;
     padding-bottom: 80px;
   }
 }
@@ -23,7 +23,7 @@
 
   @include desktop {
     column-gap: 80px;
-    row-gap: 80px;
+    row-gap: 60px;
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -41,12 +41,24 @@
   padding-bottom: 35px;
 
   @include tablet {
-    padding-top: 70px;
+    padding-top: 68px;
+  }
+
+  @include desktop {
+    padding-top: 75px;
   }
 }
 
 .catalog__list-title {
   margin-bottom: 34px;
+
+  @include tablet {
+    margin-bottom: 80px;
+  }
+
+  /* @include desktop {
+    margin-bottom: 79px;
+  } */
 }
 
 .catalog__list-items {
@@ -56,14 +68,17 @@
 
   @include desktop {
     margin-right: 80px;
-    border-right: none;
-    border-left: none;
+    border: none;
   }
 }
 
 .catalog__list-inner {
   display: grid;
   row-gap: 33px;
+
+  @include tablet {
+    row-gap: 70px;
+  }
 
   @include desktop {
     grid-template-columns: 1fr 20%;

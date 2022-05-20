@@ -12,7 +12,8 @@
 
   @include tablet {
     @include background($primary, "../img/promo-tablet@1x.jpg");
-    padding: 60px 100px;
+    justify-items: stretch;
+    padding: 57px 124px 63px 77px;
     grid-template-columns: repeat(2, 1fr);
 
     @media (min-resolution: 2dppx) {
@@ -24,7 +25,8 @@
     @include background($primary, "../img/promo-mobile@1x.jpg");
     grid-template-columns: 1fr;
     row-gap: 40px;
-    padding: 40px;
+    padding: 55px 43px 42px 40px;
+    justify-items: center;
 
     @media (min-resolution: 2dppx) {
       @include background($primary, "../img/promo-mobile@2x.jpg");
@@ -36,7 +38,22 @@
   @include regular(16px, 20px, $color: $white);
   text-align: center;
 
+  br {
+    display: none;
+
+    @include desktop {
+      display: block;
+    }
+  }
+
   @include tablet {
+    margin: 8px 0 0 92px;
+    text-align: left;
     align-self: center;
+  }
+
+  @include desktop {
+    margin: 0;
+    text-align: center;
   }
 }

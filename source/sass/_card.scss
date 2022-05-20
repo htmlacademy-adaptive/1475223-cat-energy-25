@@ -25,6 +25,16 @@
       border-top: none;
       background-color: $bg-color;
     }
+
+    @include desktop {
+      top: 83px;
+    }
+  }
+
+  &:last-of-type::before {
+    @include tablet {
+      content: none;
+    }
   }
 
   &::after {
@@ -35,7 +45,6 @@
 .card--show-more {
   padding: 25px 0;
 
-
   &::after {
     content: "";
     bottom: 1px;
@@ -44,6 +53,10 @@
     left: -20px;
     right: -20px;
     border-top: 1px solid $border-color;
+
+    @include tablet {
+      content: none;
+    }
   }
 
   .card__inner {
@@ -77,13 +90,33 @@
   .card__title {
     margin-bottom: 10px;
 
+    br {
+      display: none;
+
+      @include tablet {
+        display: block;
+      }
+    }
+
     @include tablet {
-      margin-bottom: 20px;
+      line-height: 20px;
+      width: 60%;
+      margin-bottom: 27px;
+    }
+
+    @include tablet {
+      width: 80%;
+    }
+  }
+
+  .card__description {
+    @include tablet {
     }
   }
 
   @include tablet {
-    padding: 40px;
+    margin-top: 83px;
+    padding: 52px 37px 38px 38px;
     border: 1px solid $border-color;
     flex-direction: column;
   }
@@ -94,12 +127,21 @@
     width: 60%;
 
     @include tablet {
+      width: 80%;
       align-self: center;
+    }
+
+    @include desktop {
+      margin-bottom: 20px;
     }
   }
 
   @include tablet {
     padding: 8px 40px 39px 40px;
+  }
+
+  @include desktop {
+    padding: 3px 35px 40px 39px;
   }
 }
 
@@ -136,6 +178,10 @@
     text-align: center;
     font-size: 20px;
   }
+
+  @include desktop {
+    line-height: 21px;
+  }
 }
 
 .card__properties {
@@ -170,18 +216,28 @@
   display: flex;
   justify-content: center;
   flex: 1 0 50%;
-  margin-bottom: 28px;
+  margin-bottom: 10px;
 
-  img {
-    @include desktop {
-      max-width: 148px;
-    }
+  @include tablet {
+    margin-bottom: 28px;
+  }
+
+  @include desktop {
+    margin-bottom: 40px;
   }
 }
 
 .card__description {
   @include regular(12px, 16px);
   margin: 0 0 21px;
+
+  br {
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
+  }
 
   @include tablet {
     font-size: 16px;
