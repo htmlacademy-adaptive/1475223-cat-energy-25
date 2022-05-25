@@ -27,6 +27,7 @@
     <div class="header__container container">
       <a href="index.html" class="header__logo">
         <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img src="img/logo-mobile.svg" alt="Функциональное питание для котов «CAT ENERGY»">
         </picture>
@@ -39,7 +40,7 @@
         </button>
         <div class="nav__inner">
           <ul class="nav__list site-list js-menu">
-            <li class="site-list__item">
+            <li class="site-list__item ">
               <a href="index.html">
                 Главная
               </a>
@@ -81,18 +82,18 @@
                 <div class="form__group form__group--required">
                   <label class="form__label" for="weight">Вес (КГ):</label>
                   <div class="form__control">
-                    <input class="form__input" name="weight" type="number" id="weight" value="5" required>
+                    <input class="form__input" name="weight" type="number" id="weight" value="7" required>
                   </div>
                 </div>
                 <div class="form__group">
-                  <label class="form__label" for="age">Возраст (Лет)</label>
+                  <label class="form__label" for="age">Возраст (Лет):</label>
                   <div class="form__control">
-                    <input class="form__input" name="age" type="number" id="age">
+                    <input class="form__input" name="age" type="number" id="age" value="7">
                   </div>
                 </div>
               </div>
             </div>
-            <div class="form__section">
+            <div class="form__section form__section--hr">
               <div class="form__radio">
                 <div class="form__group form__group--reverse">
                   <div class="form__control">
@@ -110,18 +111,18 @@
                   <div class="form__control">
                     <input class="form__input-radio" name="plan" type="radio" value="unknown" id="unknown">
                   </div>
-                  <label class="form__label" for="unknown">Не знаю(Нужен Ваш совет)</label>
+                  <label class="form__label" for="unknown">Не знаю (Нужен Ваш совет)</label>
                 </div>
               </div>
             </div>
           </div>
-          <div class="form__section">
+          <div class="form__section form__section--contacts">
             <h3 class="form__section-title section-title section-title--crossed">
               <span>
                 Контактные данные (владельца кота)
               </span>
             </h3>
-            <div class="form__row form__row--col">
+            <div class="form__row form__row--col form__row--inline">
               <div class="form__group form__group--required">
                 <label class="form__label" for="email">E-MAIL</label>
                 <div class="form__control form__control--with-icon">
@@ -144,7 +145,7 @@
               </div>
             </div>
           </div>
-          <div class="form__section">
+          <div class="form__section form__section--comment">
             <h3 class="form__section-title section-title section-title--crossed">
               <span>
                 Комментарий
@@ -152,12 +153,12 @@
             </h3>
             <div class="form__group">
               <div class="form__control">
-                <textarea class="form__input" name="comments" cols="30" rows="10"
+                <textarea class="form__input" name="comments" cols="30" rows="7"
                   placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
             </div>
           </div>
-          <div class="form__section">
+          <div class="form__section form__section--addition">
             <h3 class="form__section-title section-title section-title--crossed">
               <span>
                 Дополнительно
@@ -206,7 +207,7 @@
               </div>
             </div>
             <div class="form__bottom">
-              <button class="form__submit button button--primary" type="submit">Отправить</button>
+              <button class="form__submit button button--primary" type="submit">Отправить заявку</button>
               <p class="form__description">* — Обязательные поля</p>
             </div>
           </div>
@@ -219,10 +220,10 @@
       <div class="contacts__container container">
         <div class="contacts__caption">
           <h4 class="contacts__title">
-            приглашаем к сотрудничеству дилеров!
+            приглашаем <br> к сотрудничеству дилеров!
           </h4>
           <div class="contacts__address">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
           </div>
         </div>
       </div>

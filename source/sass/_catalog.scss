@@ -8,7 +8,7 @@
 
   @include desktop {
     padding-top: 47px;
-    padding-bottom: 80px;
+    padding-bottom: 82px;
   }
 }
 
@@ -46,6 +46,7 @@
 
   @include desktop {
     padding-top: 75px;
+    padding-bottom: 0;
   }
 }
 
@@ -55,10 +56,6 @@
   @include tablet {
     margin-bottom: 80px;
   }
-
-  /* @include desktop {
-    margin-bottom: 79px;
-  } */
 }
 
 .catalog__list-items {
