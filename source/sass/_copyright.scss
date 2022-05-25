@@ -20,4 +20,8 @@
 .copyright__text {
   @include regular(16px);
   margin-right: 15px;
+
+  @include tablet {
+    margin-right: 23px;
+  }
 }

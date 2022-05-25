@@ -1,14 +1,14 @@
 .catalog {
-  padding: 30px 0;
+  padding-top: 26px;
 
   @include tablet {
-    padding-top: 40px;
-    padding-bottom: 70px;
+    padding-top: 48px;
+    padding-bottom: 41px;
   }
 
   @include desktop {
-    padding-top: 0;
-    padding-bottom: 80px;
+    padding-top: 47px;
+    padding-bottom: 82px;
   }
 }
 
@@ -23,27 +23,40 @@
 
   @include desktop {
     column-gap: 80px;
-    row-gap: 80px;
+    row-gap: 60px;
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
 .catalog__title {
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 
   @include tablet {
-    margin-bottom: 80px;
+    margin-bottom: 82px;
   }
 }
 
 .catalog__list {
   padding-top: 25px;
+  padding-bottom: 35px;
 
   @include tablet {
-    padding-top: 70px;
+    padding-top: 68px;
+  }
+
+  @include desktop {
+    padding-top: 75px;
+    padding-bottom: 0;
   }
 }
 
+.catalog__list-title {
+  margin-bottom: 34px;
+
+  @include tablet {
+    margin-bottom: 80px;
+  }
+}
 
 .catalog__list-items {
   @include tablet {
@@ -52,14 +65,17 @@
 
   @include desktop {
     margin-right: 80px;
-    border-right: none;
-    border-left: none;
+    border: none;
   }
 }
 
 .catalog__list-inner {
   display: grid;
-  row-gap: 25px;
+  row-gap: 33px;
+
+  @include tablet {
+    row-gap: 70px;
+  }
 
   @include desktop {
     grid-template-columns: 1fr 20%;

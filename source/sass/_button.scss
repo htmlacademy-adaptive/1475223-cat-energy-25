@@ -1,10 +1,10 @@
 .button {
-  @include heading(14px, 1, 400);
+  @include heading(16px, 20px);
+  border: none;
   cursor: pointer;
   display: inline-block;
   width: 100%;
-  padding: 13px 26px;
-  border: 1px solid transparent;
+  padding: 10px 26px;
   text-transform: uppercase;
   text-align: center;
   transition: background-color 0.2s ease, border-color 0.2s ease;

@@ -15,9 +15,8 @@
 
 .site-list__item {
   a {
-    @include heading($fz: 20px);
-    font-size: 18px;
-    padding: 20px;
+    @include heading(18px, 1);
+    padding: 22px 20px 24px 20px;
     display: flex;
     justify-content: center;
     border-bottom: 1px solid $border-color;
@@ -35,7 +34,34 @@
     }
 
     @include tablet {
+      padding: 21px 0 11px;
       border-bottom: none;
+    }
+
+    @include desktop {
+      font-size: 20px;
+      padding: 12px 0 5px;
+      line-height: 30px;
+    }
+  }
+
+  &:nth-of-type(1) a {
+    @include tablet {
+      margin-right: 35px;
+    }
+
+    @include desktop {
+      margin-right: 36px;
+    }
+  }
+
+  &:nth-of-type(2) a {
+    @include tablet {
+      margin-right: 38px;
+    }
+
+    @include desktop {
+      margin-right: 35px;
     }
   }
 
