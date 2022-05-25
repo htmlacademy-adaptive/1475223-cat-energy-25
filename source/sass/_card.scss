@@ -6,16 +6,13 @@
   padding-bottom: 24px;
 
   &::before {
+    content: "";
     top: 0;
     position: absolute;
     z-index: -1;
     left: -20px;
     right: -20px;
     border-top: 1px solid $border-color;
-  }
-
-  &::before {
-    content: "";
 
     @include tablet {
       top: 81px;
@@ -90,14 +87,6 @@
   .card__title {
     margin-bottom: 10px;
 
-    br {
-      display: none;
-
-      @include tablet {
-        display: block;
-      }
-    }
-
     @include tablet {
       line-height: 20px;
       width: 70%;
@@ -109,8 +98,11 @@
     }
   }
 
-  .card__description {
+  .card__title br {
+    display: none;
+
     @include tablet {
+      display: block;
     }
   }
 
